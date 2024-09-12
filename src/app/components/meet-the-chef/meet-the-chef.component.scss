@@ -1,0 +1,20 @@
+.innerBanner {
+  .innerBanner_title {
+    position: relative;
+    display: table;
+    table-layout: fixed;
+    height: 100%;
+    width: 100%;
+  }
+  .bannerTitleDecor {
+    color: #9c7c57;
+    display: inline-block;
+    vertical-align: middle;
+    width: auto;
+  }
+  h1 {
+    width: auto;
+    display: inline-block;
+    vertical-align: middle;
+  }
+}

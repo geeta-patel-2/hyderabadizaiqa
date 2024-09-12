@@ -1,0 +1,174 @@
+.contact_banner{
+  .contact_banner_title {
+    position: relative;
+    display: table;
+    table-layout: fixed;
+    height: 100%;
+    width: 100%;
+  }
+  .eltdf-title-decor {
+    color: #9c7c57;
+    display: inline-block;
+    vertical-align: middle;
+    width: auto;
+  }
+  h1 {
+    width: auto;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+}
+.contact_twoCol_sec  {
+  padding: 50px 0px 50px 0px  ;
+  .eltdf-section-title-holder {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+
+    .eltdf-st-title-holder {
+      display: inline-block;
+      display: -ms-inline-flexbox;
+      display: inline-flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      position: relative;
+    }
+
+    .eltdf-st-tagline {
+      font-family: Miniver, sans-serif;
+      font-size: 19px;
+      font-weight: 400;
+      line-height: 28px;
+      letter-spacing: .04em;
+      color: #afb8b8;
+      text-transform: none;
+      -webkit-font-smoothing: antialiased;
+      color: #c9ab81;
+      display: block;
+      margin-bottom: 13px;
+    }
+    .eltdf-st-title {
+      margin-bottom: 40px;
+    }
+  }
+}
+.contact_locationSec {
+  .contact_address {
+    text-align: center;
+    display: table;
+    width: auto;
+    margin: 0 auto;
+    ul{
+      li{
+        text-align: left;
+        margin-bottom:20px;
+        a {
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+.contactMapSec{
+  padding:50px 0;
+  .socialContactList{
+    li{
+      display: inline-block;
+      vertical-align: middle;
+      width: auto;
+      margin:0 8px;
+      & a{
+        background-color: #FFFFFF;
+        border-style: double;
+        border-width: 3px 3px 3px 3px;
+        border-color: #000000;
+        border-radius: 10px 10px 10px 10px;
+        font-size: var(--icon-size, 25px);
+        line-height: var(--icon-size, 25px);
+        width: 60px;
+        height: 60px;
+        display: inline-flex;
+        vertical-align: middle;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        svg{
+          width: 30px;
+          height: 30px;
+          position: relative;
+          display: block;
+          fill: #000000;
+        }
+        .elementor-screen-only{
+          position: absolute;
+          top: -10000em;
+          width: 1px;
+          height: 1px;
+          margin: -1px;
+          padding: 0;
+          overflow: hidden;
+          clip: rect(0, 0, 0, 0);
+          border: 0;
+        }
+        &:hover {
+          opacity: 0.9;
+          color: #fff;
+        }
+      }
+    }
+  }
+  .google_map { margin-top: 50px; }
+}
+/*Form CSS*/
+form{
+  input, textarea{
+    position: relative;
+    width: 100%;
+    margin: 0 0 28px;
+    padding: 7px 23px 3px;
+    font-family: inherit;
+    font-size: 19px;
+    font-weight: inherit;
+    line-height:26px;
+    color: #fff;
+    background-color: transparent;
+    border: 1px solid #715b3e;
+    border-radius: 0;
+    outline: 0;
+    cursor: pointer;
+    -webkit-appearance: none;
+    box-sizing: border-box;
+    -webkit-transition: border-color .2s ease-in-out;
+    transition: border-color .2s ease-in-out;
+  }
+
+  .submitBtn {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    width: auto;
+    margin: 0;
+    font-family: "Open Sans Condensed", sans-serif;
+    font-size: 14px;
+    line-height: 2em;
+    font-weight: 300;
+    letter-spacing: .36em;
+    text-transform: uppercase;
+    outline: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: color .2s ease-in-out, background-color .2s ease-in-out, border-color .2s ease-in-out;
+    transition: color .2s ease-in-out, background-color .2s ease-in-out, border-color .2s ease-in-out;
+    padding: 9px 39px;
+    cursor: pointer;
+    background: transparent;
+    border:1px solid #c9ab81;
+    color: #fff;
+  }
+
+
+}

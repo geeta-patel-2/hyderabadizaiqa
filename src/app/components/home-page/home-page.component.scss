@@ -1,0 +1,74 @@
+.whatWeServeSection {
+  .weServeLeftBox {
+    width: 82%;
+    margin: 0 auto;
+
+    .menuContentTitle {
+      width: 50%;
+      margin: auto;
+    }
+  }
+
+  .animationSideImage {
+    width: 75%;
+  }
+}
+.hMenuPriceBx {
+  .hMenuTitlePrice{
+    h6 {
+      display: inline-block;
+      vertical-align: middle;
+      width: auto;
+    }
+    .hPriceLine {
+      display: inline-block;
+      vertical-align: middle;
+      width: 30%;
+      border-bottom: 1px solid #715b3e;
+      position: relative;
+
+      &:before{
+        content: '';
+        position: absolute;
+        bottom: 5px;
+        width: 100%;
+        border-bottom: 1px solid #715b3e;
+      }
+    }
+    .hMenuPrice{
+      font-family: caviar_dreamsbold, sans-serif;
+      font-weight: 700;
+      text-transform: uppercase;
+      -ms-word-wrap: break-word;
+      word-wrap: break-word;
+      color: #c9ab81;
+      font-size: 19px;
+      line-height: 1.52em;
+      letter-spacing: .03em;
+      margin: 0;
+      padding-left: 15px;
+      display: inline-block;
+      vertical-align: middle;
+      width: 1%;
+      white-space: nowrap;
+    }
+    }
+  .hMenuTxt {
+    p {
+      font-size: 19px;
+      line-height: 25px;
+      text-transform: lowercase;
+    }
+  }
+  }
+.hFranchiseExpansion   {
+  .row{
+    div {
+      padding:30px 0;
+      .hFranchiseTxt {
+        padding-top: 0;
+      }
+    }
+  }
+
+}

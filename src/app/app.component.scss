@@ -37,8 +37,15 @@ h1, h2, h3, h4, h5, h6 {
   -ms-word-wrap: break-word;
   word-wrap: break-word;
 }
+h2 {
+  font-size: 41px;
+  line-height: 1.31em;
+  letter-spacing: .23em;
+}
 h5 {
   font-size: 19px;
   line-height: 1.52em;
   letter-spacing: .23em;
 }
+/*background color */
+.bg_black { background: #000;}
