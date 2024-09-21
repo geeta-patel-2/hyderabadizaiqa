@@ -1,4 +1,4 @@
-<section class="about_banner text-center" style="height: 530px; background-color: rgb(12, 19, 21);">
+<section class="about_banner text-center bgImage" style="height: 530px; background:url('/assets/images/about_us_title_img.jpg');">
     <div class="container-xxl">
         <div class="about_banner_title">
             <div class="bannerTitleDecor">
@@ -192,10 +192,10 @@
         </div><!--AboutChefTwoColSec-->
     </div>
 </section>
-<section class="abTestimonial">
+<section class="abTestimonial text-center">
     <div class="container-xxl">
-        <div class="abTestimonialTitle">
-            <span class="about_subtitle ">HYDERABADI ZAIQA</span>
+        <div class="abTestimonialTitle menuContentTitle ">
+            <span class="about_subtitle mainTitle_subtitle m-0">HYDERABADI ZAIQA</span>
             <div class="MainTitle">
                 <div class="decor">
                     <svg height="9.146" width="41.125" xmlns="http://www.w3.org/2000/svg">
@@ -203,7 +203,7 @@
                         <path d="M40.881.591L20.562 8.576.243.591" fill="none" stroke="#9C7C57" stroke-miterlimit="10"></path>
                     </svg>
                 </div>
-                <h2 class="eltdf-st-title">OUR CHEFS</h2>
+                <h2 class="mainTitleCommon mt-2 ">OUR CHEFS</h2>
                 <div class="decor">
                     <svg height="9.146" width="41.125" xmlns="http://www.w3.org/2000/svg">
                         <path d="M40.881 8.576L20.562.591.244 8.576" fill="none" stroke="#9C7C57" stroke-miterlimit="10"></path>
@@ -217,6 +217,37 @@
                 <img src="https://hyderabadizaiqa.com/wp-content/plugins/laurent-core/post-types/testimonials/shortcodes/testimonials/assets/img/quote-mark.png"
                      title="">
             </div>
+
+
+                <ngb-carousel class="text-center testimonialSlider">
+                    <ng-template ngbSlide>
+                        <div class="picsum-img-wrapper">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisic sed do eiusmod tempor incidid sens as out labore et dolore magna aliqua. Ut enim ad minim venia quis nostrud exercitation co laboris nisi ut aliquip ex ea commodo conse.</p>
+                        </div>
+                        <div class="carousel-caption">
+                            <h3>Robert Chang</h3>
+                            <span class="authorJob">Sommelier</span>
+                        </div>
+                    </ng-template>
+                    <ng-template ngbSlide>
+                        <div class="picsum-img-wrapper">
+                            <p> Duis aute irure dolor. Lorem ipsum dolor sit amet, consectetur adipisic sed do eiusmod tempor incidid sens as out labore et. Ut enim ad minim venia quis nostrud exercitation co laboris nisi ut aliquip ex ea commodo conse. </p>
+                         </div>
+                        <div class="carousel-caption">
+                            <h3>Andrea Chung</h3>
+                            <span class="authorJob">Cook</span>
+                        </div>
+                    </ng-template>
+                    <ng-template ngbSlide>
+                        <div class="picsum-img-wrapper">
+                            <p>Ut enim ad minim venia quis nostrud exercitation co laboris nisi ut aliquip ex ea commodo conse.  Duis aute irure dolor. Lorem ipsum dolor sit amet, consectetur adipisic sed do eiusmod tempor incidid sens as out labore et.</p>
+                        </div>
+                        <div class="carousel-caption">
+                            <h3>Andrea Chung</h3>
+                            <span class="authorJob">Cook</span>
+                        </div>
+                    </ng-template>
+                </ngb-carousel>
         </div>
     </div>
 </section>

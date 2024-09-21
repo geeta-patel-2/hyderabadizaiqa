@@ -1,10 +1,50 @@
 <section class="HomepageBanner">
-    <div class="container-xxl">
-        <div class="Home page banner">
-            <h1>Home banner</h1>
-        </div>
-    </div>
+    @if (images) {
+        <ngb-carousel>
+            <ng-template ngbSlide>
+                <div class="picsum-img-wrapper">
+                    <img [src]="images[0]" alt="Random first slide" class="img-fluid w-100"/>
+                </div>
+                <div class="carousel-caption">
+                    <div class="HomePageBanner">
+                        <span class="SubTitle">welcome to our delicious corner</span>
+                        <h1>The Best Dishes</h1>
+                        <p>We have a proper passion for cooking. Love is the secret ingredient that makes all our meals taste better and magical.</p>
+                        <a href="/our-menus" title="Our Menu" class="ButtonStyleTwo">Our Menu</a>
+                    </div>
+                </div>
+            </ng-template>
+            <ng-template ngbSlide>
+                <div class="picsum-img-wrapper">
+                    <img [src]="images[1]" alt="Random second slide" class="img-fluid w-100"/>
+                </div>
+                <div class="carousel-caption">
+                    <div class="HomePageBanner">
+                        <span class="SubTitle">welcome to our delicious corner</span>
+                        <h1>The Best Dishes</h1>
+                        <p>We have a proper passion for cooking. Love is the secret ingredient that makes all our meals taste better and magical.</p>
+                        <a href="/our-menus" title="Our Menu" class="ButtonStyleTwo">Our Menu</a>
+                    </div>
+                </div>
+            </ng-template>
+            <ng-template ngbSlide>
+                <div class="picsum-img-wrapper">
+                    <img [src]="images[2]" alt="Random third slide" class="img-fluid w-100" />
+                </div>
+                <div class="carousel-caption">
+                    <div class="HomePageBanner">
+                        <span class="SubTitle">welcome to our delicious corner</span>
+                        <h1>The Best Dishes</h1>
+                        <p>We have a proper passion for cooking. Love is the secret ingredient that makes all our meals taste better and magical.</p>
+                        <a href="/our-menus" title="Our Menu" class="ButtonStyleTwo">Our Menu</a>
+                    </div>
+                </div>
+            </ng-template>
+        </ngb-carousel>
+    }
 </section>
+
+
 <section class="ourStorySec pt-lg-5 pb-lg-5 pt-sm-3 pb-sm-3">
     <div class="container-xxl">
         <div class="menuContentTitle text-center">
@@ -31,20 +71,37 @@
                 <div class="col-md-6 col-sm-12">
                     <div class="storyLogo text-center">
                         <!--<img src="https://hyderabadizaiqa.com/wp-content/uploads/2023/06/logo-ww.png" alt="">-->
-                        <img src="/assets/images/main_logo.png" alt="" height="300" width="300">
+                        <img alt="" class="img-fluid" src="/assets/images/main_logo.png">
+                        <button (click)="this.modalService.open(content, { centered: true })" class="play_btn">
+                            <svg enable-background="new 0 0 97.094 97.094" height="97.094px" viewBox="0 0 97.094 97.094" width="97.094px" x="0px"
+                                 xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" y="0px">
+                                <circle cx="48.558" cy="48.548" fill="none" r="48" stroke="currentColor" stroke-miterlimit="10"></circle>
+                                <circle class="eltdf-popout" cx="48.558" cy="48.548" fill="none" r="41.037" stroke="none"
+                                        stroke-miterlimit="10"></circle>
+                                <polygon fill="none" points="42.578,69.964 42.578,27.13 63.994,48.546 " stroke="currentColor"
+                                         stroke-miterlimit="10"></polygon>
+          </svg>
+                        </button>
                     </div>
                 </div>
                 <div class="col-md-6 col-sm-12">
                     <div class="storyContent">
                         <p>
-                            Welcome to Hyderabadi Zaiqa, where culinary enchantment awaits you. Step into a world where the vibrant and diverse cuisine of India comes alive in a symphony of rich flavours, aromatic spices, and authentic recipes handed down through generations.</p>
+                            Welcome to Hyderabadi Zaiqa, where culinary enchantment awaits you. Step into a world where the vibrant and diverse
+                            cuisine of India comes alive in a symphony of rich flavours, aromatic spices, and authentic recipes handed down through
+                            generations.</p>
                         <p>
-                            Nestled in the heart of Manhattan, New York, Hyderabadi Zaiqa, offers an exquisite ambiance that seamlessly combines elegance and charm. Step inside and be embraced by a warm and inviting atmosphere, where traditional elements meet contemporary design. With intricate artwork, regal motifs, and a harmonious fusion of rich colours, our tasteful decor pays homage to our cultural heritage. Enhanced by soft lighting and comfortable seating, our restaurant sets the perfect stage for an unforgettable dining experience.
-                        </p>
+                            Nestled in the heart of Manhattan, New York, Hyderabadi Zaiqa, offers an exquisite ambiance that seamlessly combines
+                            elegance and charm. Step inside and be embraced by a warm and inviting atmosphere, where traditional elements meet
+                            contemporary design. With intricate artwork, regal motifs, and a harmonious fusion of rich colours, our tasteful decor
+                            pays homage to our cultural heritage. Enhanced by soft lighting and comfortable seating, our restaurant sets the perfect
+                            stage for an unforgettable dining experience. </p>
                         <div class="hAboutBtn">
                             <a class="btn-animation" href="/meet-the-chef/" itemprop="url" target="_blank">
-                                <svg class="btnSvg-left" enable-background="new 0 0 37.813 43.125" viewBox="0 0 37.813 43.125" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
-                                    <polyline fill="none" points="0.713,0.363 18.911,21.607 0.795,42.766 " stroke="#C6A270" stroke-miterlimit="10"></polyline>
+                                <svg class="btnSvg-left" enable-background="new 0 0 37.813 43.125" viewBox="0 0 37.813 43.125" x="0px"
+                                     xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                                    <polyline fill="none" points="0.713,0.363 18.911,21.607 0.795,42.766 " stroke="#C6A270"
+                                              stroke-miterlimit="10"></polyline>
                                     <polyline fill="none" points="18.911,0.363 0.714,21.607 18.829,42.766 " stroke="#C6A270"
                                               stroke-miterlimit="10"></polyline>
                                     <polyline fill="none" points="18.911,0.363 37.108,21.607 18.993,42.766 " stroke="#C6A270"
@@ -53,8 +110,10 @@
                                               stroke-miterlimit="10"></polyline>
                                 </svg>
                                 <span class="btnText">EXPLORE MENU</span>
-                                <svg class="btnSvg-right" enable-background="new 0 0 37.813 43.125" viewBox="0 0 37.813 43.125" x="0px"  xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
-                                    <polyline fill="none" points="0.713,0.363 18.911,21.607 0.795,42.766 " stroke="#C6A270" stroke-miterlimit="10"></polyline>
+                                <svg class="btnSvg-right" enable-background="new 0 0 37.813 43.125" viewBox="0 0 37.813 43.125" x="0px"
+                                     xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                                    <polyline fill="none" points="0.713,0.363 18.911,21.607 0.795,42.766 " stroke="#C6A270"
+                                              stroke-miterlimit="10"></polyline>
                                     <polyline fill="none" points="18.911,0.363 0.714,21.607 18.829,42.766 " stroke="#C6A270"
                                               stroke-miterlimit="10"></polyline>
                                     <polyline fill="none" points="18.911,0.363 37.108,21.607 18.993,42.766 " stroke="#C6A270"
@@ -96,13 +155,15 @@
                 <div class="col-md-4 col-sm-6 col-12">
                     <div class="menuBox text-center">
                         <div class="menuImg">
-                            <img src="https://hyderabadizaiqa.com/wp-content/uploads/2023/06/Tomato-Soup-240x350.webp" alt="" class="img-fluid">
+                            <img alt="" class="img-fluid" src="https://hyderabadizaiqa.com/wp-content/uploads/2023/06/Tomato-Soup-240x350.webp">
                         </div>
                         <div class="menuTitleButton">
                             <h5>SHORBA</h5>
                             <a class="btn-animation" href="/meet-the-chef/" itemprop="url" target="_blank">
-                                <svg class="btnSvg-left" enable-background="new 0 0 37.813 43.125" viewBox="0 0 37.813 43.125" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
-                                    <polyline fill="none" points="0.713,0.363 18.911,21.607 0.795,42.766 " stroke="#C6A270" stroke-miterlimit="10"></polyline>
+                                <svg class="btnSvg-left" enable-background="new 0 0 37.813 43.125" viewBox="0 0 37.813 43.125" x="0px"
+                                     xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                                    <polyline fill="none" points="0.713,0.363 18.911,21.607 0.795,42.766 " stroke="#C6A270"
+                                              stroke-miterlimit="10"></polyline>
                                     <polyline fill="none" points="18.911,0.363 0.714,21.607 18.829,42.766 " stroke="#C6A270"
                                               stroke-miterlimit="10"></polyline>
                                     <polyline fill="none" points="18.911,0.363 37.108,21.607 18.993,42.766 " stroke="#C6A270"
@@ -111,8 +172,10 @@
                                               stroke-miterlimit="10"></polyline>
                                 </svg>
                                 <span class="btnText">EXPLORE MENU</span>
-                                <svg class="btnSvg-right" enable-background="new 0 0 37.813 43.125" viewBox="0 0 37.813 43.125" x="0px"  xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
-                                    <polyline fill="none" points="0.713,0.363 18.911,21.607 0.795,42.766 " stroke="#C6A270" stroke-miterlimit="10"></polyline>
+                                <svg class="btnSvg-right" enable-background="new 0 0 37.813 43.125" viewBox="0 0 37.813 43.125" x="0px"
+                                     xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                                    <polyline fill="none" points="0.713,0.363 18.911,21.607 0.795,42.766 " stroke="#C6A270"
+                                              stroke-miterlimit="10"></polyline>
                                     <polyline fill="none" points="18.911,0.363 0.714,21.607 18.829,42.766 " stroke="#C6A270"
                                               stroke-miterlimit="10"></polyline>
                                     <polyline fill="none" points="18.911,0.363 37.108,21.607 18.993,42.766 " stroke="#C6A270"
@@ -127,13 +190,15 @@
                 <div class="col-md-4 col-sm-6 col-12">
                     <div class="menuBox text-center">
                         <div class="menuImg">
-                            <img src="https://hyderabadizaiqa.com/wp-content/uploads/2023/06/papdi-chaat-02-240x350.webp" alt="" class="img-fluid">
+                            <img alt="" class="img-fluid" src="https://hyderabadizaiqa.com/wp-content/uploads/2023/06/papdi-chaat-02-240x350.webp">
                         </div>
                         <div class="menuTitleButton">
                             <h5>CHAT</h5>
                             <a class="btn-animation" href="/meet-the-chef/" itemprop="url" target="_blank">
-                                <svg class="btnSvg-left" enable-background="new 0 0 37.813 43.125" viewBox="0 0 37.813 43.125" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
-                                    <polyline fill="none" points="0.713,0.363 18.911,21.607 0.795,42.766 " stroke="#C6A270" stroke-miterlimit="10"></polyline>
+                                <svg class="btnSvg-left" enable-background="new 0 0 37.813 43.125" viewBox="0 0 37.813 43.125" x="0px"
+                                     xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                                    <polyline fill="none" points="0.713,0.363 18.911,21.607 0.795,42.766 " stroke="#C6A270"
+                                              stroke-miterlimit="10"></polyline>
                                     <polyline fill="none" points="18.911,0.363 0.714,21.607 18.829,42.766 " stroke="#C6A270"
                                               stroke-miterlimit="10"></polyline>
                                     <polyline fill="none" points="18.911,0.363 37.108,21.607 18.993,42.766 " stroke="#C6A270"
@@ -142,8 +207,10 @@
                                               stroke-miterlimit="10"></polyline>
                                 </svg>
                                 <span class="btnText">EXPLORE MENU</span>
-                                <svg class="btnSvg-right" enable-background="new 0 0 37.813 43.125" viewBox="0 0 37.813 43.125" x="0px"  xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
-                                    <polyline fill="none" points="0.713,0.363 18.911,21.607 0.795,42.766 " stroke="#C6A270" stroke-miterlimit="10"></polyline>
+                                <svg class="btnSvg-right" enable-background="new 0 0 37.813 43.125" viewBox="0 0 37.813 43.125" x="0px"
+                                     xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                                    <polyline fill="none" points="0.713,0.363 18.911,21.607 0.795,42.766 " stroke="#C6A270"
+                                              stroke-miterlimit="10"></polyline>
                                     <polyline fill="none" points="18.911,0.363 0.714,21.607 18.829,42.766 " stroke="#C6A270"
                                               stroke-miterlimit="10"></polyline>
                                     <polyline fill="none" points="18.911,0.363 37.108,21.607 18.993,42.766 " stroke="#C6A270"
@@ -158,13 +225,15 @@
                 <div class="col-md-4 col-sm-6 col-12">
                     <div class="menuBox text-center">
                         <div class="menuImg">
-                            <img src="https://hyderabadizaiqa.com/wp-content/uploads/2023/06/Spring-Rolls-6-240x350.webp" alt="" class="img-fluid">
+                            <img alt="" class="img-fluid" src="https://hyderabadizaiqa.com/wp-content/uploads/2023/06/Spring-Rolls-6-240x350.webp">
                         </div>
                         <div class="menuTitleButton">
                             <h5>Kids Menu</h5>
                             <a class="btn-animation" href="/meet-the-chef/" itemprop="url" target="_blank">
-                                <svg class="btnSvg-left" enable-background="new 0 0 37.813 43.125" viewBox="0 0 37.813 43.125" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
-                                    <polyline fill="none" points="0.713,0.363 18.911,21.607 0.795,42.766 " stroke="#C6A270" stroke-miterlimit="10"></polyline>
+                                <svg class="btnSvg-left" enable-background="new 0 0 37.813 43.125" viewBox="0 0 37.813 43.125" x="0px"
+                                     xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                                    <polyline fill="none" points="0.713,0.363 18.911,21.607 0.795,42.766 " stroke="#C6A270"
+                                              stroke-miterlimit="10"></polyline>
                                     <polyline fill="none" points="18.911,0.363 0.714,21.607 18.829,42.766 " stroke="#C6A270"
                                               stroke-miterlimit="10"></polyline>
                                     <polyline fill="none" points="18.911,0.363 37.108,21.607 18.993,42.766 " stroke="#C6A270"
@@ -173,8 +242,10 @@
                                               stroke-miterlimit="10"></polyline>
                                 </svg>
                                 <span class="btnText">EXPLORE MENU</span>
-                                <svg class="btnSvg-right" enable-background="new 0 0 37.813 43.125" viewBox="0 0 37.813 43.125" x="0px"  xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
-                                    <polyline fill="none" points="0.713,0.363 18.911,21.607 0.795,42.766 " stroke="#C6A270" stroke-miterlimit="10"></polyline>
+                                <svg class="btnSvg-right" enable-background="new 0 0 37.813 43.125" viewBox="0 0 37.813 43.125" x="0px"
+                                     xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                                    <polyline fill="none" points="0.713,0.363 18.911,21.607 0.795,42.766 " stroke="#C6A270"
+                                              stroke-miterlimit="10"></polyline>
                                     <polyline fill="none" points="18.911,0.363 0.714,21.607 18.829,42.766 " stroke="#C6A270"
                                               stroke-miterlimit="10"></polyline>
                                     <polyline fill="none" points="18.911,0.363 37.108,21.607 18.993,42.766 " stroke="#C6A270"
@@ -210,40 +281,39 @@
                     </svg>
                 </div>
             </div><!--MainTitle-->
-            <p>Craving authentic Hyderabadi cuisine? Contact us now to satisfy your taste buds and experience the culinary magic of Hyderabadi Zaiqa.</p>
+            <p>Craving authentic Hyderabadi cuisine? Contact us now to satisfy your taste buds and experience the culinary magic of Hyderabadi
+                Zaiqa.</p>
         </div><!--menuContentTitle-->
         <div class="biryaniContent">
             <div class="biryaniImg">
-                <img src="https://hyderabadizaiqa.com/wp-content/uploads/2023/06/Mutton-biryani_prev_ui.png" alt="" class="img-fluid">
+                <img alt="" class="img-fluid" src="https://hyderabadizaiqa.com/wp-content/uploads/2023/06/Mutton-biryani_prev_ui.png">
             </div>
             <div class="biryaniTxt">
                 <p>
-                    Welcome to Hyderabadi Zaiqa, where culinary enchantment awaits you. Step into a world where the vibrant and diverse cuisine of India comes alive in a symphony of rich flavours, aromatic spices, and authentic recipes handed down through generations.
-                </p>
+                    Welcome to Hyderabadi Zaiqa, where culinary enchantment awaits you. Step into a world where the vibrant and diverse cuisine of
+                    India comes alive in a symphony of rich flavours, aromatic spices, and authentic recipes handed down through generations. </p>
                 <p>
-                    Welcome to Hyderabadi Zaiqa, where culinary enchantment awaits you. Step into a world where the vibrant and diverse cuisine of India comes alive in a symphony of rich flavours, aromatic spices, and authentic recipes handed down through generations.
-                </p>
+                    Welcome to Hyderabadi Zaiqa, where culinary enchantment awaits you. Step into a world where the vibrant and diverse cuisine of
+                    India comes alive in a symphony of rich flavours, aromatic spices, and authentic recipes handed down through generations. </p>
             </div>
             <div class="biryaniTxtBtn pt-lg-4 pt-sm-3">
                 <a class="btn-animation" href="/meet-the-chef/" itemprop="url" target="_blank">
-                    <svg class="btnSvg-left" enable-background="new 0 0 37.813 43.125" viewBox="0 0 37.813 43.125" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
-                                    <polyline fill="none" points="0.713,0.363 18.911,21.607 0.795,42.766 " stroke="#C6A270" stroke-miterlimit="10"></polyline>
-                        <polyline fill="none" points="18.911,0.363 0.714,21.607 18.829,42.766 " stroke="#C6A270"
-                                  stroke-miterlimit="10"></polyline>
-                        <polyline fill="none" points="18.911,0.363 37.108,21.607 18.993,42.766 " stroke="#C6A270"
-                                  stroke-miterlimit="10"></polyline>
-                        <polyline fill="none" points="37.108,0.363 18.911,21.607 37.026,42.766 " stroke="#C6A270"
-                                  stroke-miterlimit="10"></polyline>
+                    <svg class="btnSvg-left" enable-background="new 0 0 37.813 43.125" viewBox="0 0 37.813 43.125" x="0px" xml:space="preserve"
+                         xmlns="http://www.w3.org/2000/svg" y="0px">
+                                    <polyline fill="none" points="0.713,0.363 18.911,21.607 0.795,42.766 " stroke="#C6A270"
+                                              stroke-miterlimit="10"></polyline>
+                        <polyline fill="none" points="18.911,0.363 0.714,21.607 18.829,42.766 " stroke="#C6A270" stroke-miterlimit="10"></polyline>
+                        <polyline fill="none" points="18.911,0.363 37.108,21.607 18.993,42.766 " stroke="#C6A270" stroke-miterlimit="10"></polyline>
+                        <polyline fill="none" points="37.108,0.363 18.911,21.607 37.026,42.766 " stroke="#C6A270" stroke-miterlimit="10"></polyline>
                                 </svg>
                     <span class="btnText">Explore Biryani Collection</span>
-                    <svg class="btnSvg-right" enable-background="new 0 0 37.813 43.125" viewBox="0 0 37.813 43.125" x="0px"  xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
-                                    <polyline fill="none" points="0.713,0.363 18.911,21.607 0.795,42.766 " stroke="#C6A270" stroke-miterlimit="10"></polyline>
-                        <polyline fill="none" points="18.911,0.363 0.714,21.607 18.829,42.766 " stroke="#C6A270"
-                                  stroke-miterlimit="10"></polyline>
-                        <polyline fill="none" points="18.911,0.363 37.108,21.607 18.993,42.766 " stroke="#C6A270"
-                                  stroke-miterlimit="10"></polyline>
-                        <polyline fill="none" points="37.108,0.363 18.911,21.607 37.026,42.766 " stroke="#C6A270"
-                                  stroke-miterlimit="10"></polyline>
+                    <svg class="btnSvg-right" enable-background="new 0 0 37.813 43.125" viewBox="0 0 37.813 43.125" x="0px" xml:space="preserve"
+                         xmlns="http://www.w3.org/2000/svg" y="0px">
+                                    <polyline fill="none" points="0.713,0.363 18.911,21.607 0.795,42.766 " stroke="#C6A270"
+                                              stroke-miterlimit="10"></polyline>
+                        <polyline fill="none" points="18.911,0.363 0.714,21.607 18.829,42.766 " stroke="#C6A270" stroke-miterlimit="10"></polyline>
+                        <polyline fill="none" points="18.911,0.363 37.108,21.607 18.993,42.766 " stroke="#C6A270" stroke-miterlimit="10"></polyline>
+                        <polyline fill="none" points="37.108,0.363 18.911,21.607 37.026,42.766 " stroke="#C6A270" stroke-miterlimit="10"></polyline>
                                 </svg>
                 </a>
             </div>
@@ -276,13 +346,19 @@
                         </div><!--MainTitle-->
                     </div><!--menuContentTitle-->
                     <div class="weServeTxt">
-                        <p>Indulge in a tantalizing culinary voyage with our diverse menu at Hyderabadi Zaiqa. From delectable appetizers that ignite your taste buds, to flavourful main courses that transport you to the heart of India, accompanied by freshly baked bread, and concluding with irresistible desserts that leave you craving for more. Experience the symphony of flavours and immerse yourself in the authentic essence of Hyderabadi cuisine.</p>
+                        <p>Indulge in a tantalizing culinary voyage with our diverse menu at Hyderabadi Zaiqa. From delectable appetizers that ignite
+                            your taste buds, to flavourful main courses that transport you to the heart of India, accompanied by freshly baked bread,
+                            and concluding with irresistible desserts that leave you craving for more. Experience the symphony of flavours and immerse
+                            yourself in the authentic essence of Hyderabadi cuisine.</p>
                     </div>
                 </div>
             </div><!--weServeLeftBox-->
             <div class="col-md-4 col-sm-12">
                 <div class="animationSideImage">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 289 543"><path fill="none" stroke="#9A7D57" stroke-width="1.5" stroke-miterlimit="10" d="M0 0l72.457 72.457L0 144.913l72.457 72.457L0 289.826l72.457 72.456L0 434.739l72.457 72.456-36.229 36.229M72.457 0L0 72.457l72.457 72.457L0 217.37l72.457 72.457L0 362.282l72.457 72.457L0 507.195l36.229 36.229m72.457 0l36.229-36.229-72.457-72.456 72.457-72.457-72.457-72.456 72.457-72.457-72.457-72.457 72.457-72.457L72.457 0m72.457 0L72.457 72.457l72.457 72.457-72.457 72.456 72.457 72.457-72.457 72.456 72.457 72.457-72.457 72.456 36.229 36.229m72.457-.001l36.229-36.229-72.457-72.456 72.457-72.457-72.457-72.456 72.457-72.457-72.457-72.457 72.457-72.457L144.914 0m72.457 0l-72.457 72.457 72.457 72.457-72.457 72.457 72.457 72.457-72.457 72.456 72.457 72.457-72.457 72.456 36.229 36.229m72.457-.002l36.229-36.229-72.457-72.456 72.457-72.457-72.457-72.456 72.457-72.457-72.457-72.457 72.457-72.457L217.371 0m72.457 0l-72.457 72.457 72.457 72.457-72.457 72.457 72.457 72.457-72.457 72.456 72.457 72.457-72.457 72.456 36.229 36.229M18.113 54.343L0 36.229m54.342-18.115L36.229 0M18.113 18.114L36.228 0M126.8 18.114L108.686 0M90.571 18.114L108.686 0m90.571 18.114L181.143 0m0 0l-18.114 18.114m108.56 0L253.475 0M235.36 18.114L253.475 0m18.24 54.343l18.113-18.114m-271.715 90.57L0 108.685m271.715 18.114l18.113-18.114M18.113 199.256L0 181.142m271.715 18.114l18.113-18.114m-271.715 90.57L0 253.598m271.715 18.114l18.113-18.114M72.457 0v36.229L90.57 54.343m-36.029 0l17.916-18.114M144.914 0v36.229l18.113 18.114m-36.029 0l17.916-18.114M217.368 0v36.229l18.114 18.114M36.229 36.229v36.229l18.113 18.114m54.344-54.343v36.229L126.8 90.571m54.343-54.342v36.229l18.114 18.114M253.6 36.229v36.229l18.113 18.114m-72.262-36.229l17.917-18.114M72.457 72.457v36.229L90.57 126.8m-36.029-.001l17.916-18.114m72.457-36.228v36.229l18.113 18.114m-36.029-.001l17.916-18.114m72.447-36.228v36.229l18.114 18.114m-36.03-.001l17.916-18.114M72.457 144.913v36.229l18.113 18.114m-36.029 0l17.916-18.114m72.457-36.229v36.229l18.113 18.114m-36.029 0l17.916-18.114m72.447-36.229v36.229l18.114 18.114m-36.03 0l17.916-18.114M72.457 217.37v36.229l18.113 18.114m-36.029-.001l17.916-18.114m72.457-36.228v36.229l18.113 18.114m-36.029-.001l17.916-18.114m72.447-36.228v36.229l18.114 18.114m-36.03-.001l17.916-18.114M72.457 289.827v36.229L90.57 344.17m-36.029 0l17.916-18.114m72.457-36.229v36.229l18.113 18.114m-36.029 0l17.916-18.114m72.447-36.229v36.229l18.114 18.114m-36.03 0l17.916-18.114M72.457 362.282v36.229l18.113 18.114m-36.029 0l17.916-18.114m72.457-36.229v36.229l18.113 18.114m-36.029 0l17.916-18.114m72.447-36.229v36.229l18.114 18.114m-36.03 0l17.916-18.114M72.457 434.739v36.229l18.113 18.114m-36.029 0l17.916-18.114m72.457-36.229v36.229l18.113 18.114m-36.029 0l17.916-18.114m72.447-36.229v36.229l18.114 18.114m-36.03 0l17.916-18.114M18.313 90.571l17.916-18.114M90.77 90.571l17.916-18.114m54.541 18.114l17.916-18.114m54.541 18.114L253.6 72.457M36.229 108.685v36.229l18.113 18.114m54.344-54.343v36.229l18.114 18.114m54.343-54.343v36.229l18.114 18.114m54.343-54.343v36.229l18.113 18.114m-253.4 0l17.916-18.114m54.541 18.114l17.916-18.114m72.457 0l-17.916 18.114m72.457 0l17.916-18.114M36.229 181.142v36.229l18.113 18.114m54.344-54.343v36.229l18.114 18.114m54.343-54.343v36.229l18.114 18.114m54.343-54.343v36.229l18.113 18.114m-253.4-.001l17.916-18.114m54.541 18.114l17.916-18.114m72.457 0l-17.916 18.114m72.457 0L253.6 217.37M36.229 253.598v36.228l18.113 18.115m54.344-54.343v36.228l18.114 18.115m54.343-54.343v36.228l18.114 18.115m54.343-54.343v36.228l18.113 18.115m-253.4 0l17.916-18.115m54.541 18.115l17.916-18.115m54.541 18.115l17.916-18.115m54.541 18.115l17.916-18.115M18.113 344.159L0 326.046m271.715 18.113l18.113-18.113M18.113 416.625L0 398.512m271.715 18.113l18.113-18.113M18.113 489.081L0 470.968m271.715 18.113l18.113-18.113M36.229 326.046v36.228l18.113 18.115m54.344-54.343v36.228l18.114 18.115m54.343-54.343v36.228l18.114 18.115m54.343-54.343v36.228l18.113 18.115m-253.4 0l17.916-18.115m54.541 18.115l17.916-18.115m72.457-.001l-17.916 18.115m90.373-18.115l-17.916 18.115M36.229 398.511v36.228l18.113 18.115m54.344-54.343v36.228l18.114 18.115m54.343-54.343v36.228l18.114 18.115m54.343-54.343v36.228l18.113 18.115m-253.4 0l17.916-18.115m54.541 18.115l17.916-18.115m54.541 18.115l17.916-18.115m54.541 18.115l17.916-18.115M36.229 470.968v36.228l18.113 18.115m54.344-54.343v36.228l18.114 18.115m54.343-54.343v36.228l18.114 18.115m54.343-54.343v36.228l18.113 18.115m-253.4 0l17.916-18.115m54.541 18.115l17.916-18.115m54.541 18.115l17.916-18.115m72.457-.001l-17.916 18.115M72.457 507.195v36.229m72.457-36.229v36.229m72.457-36.229v36.229"></path></svg>
+                    <svg viewBox="0 0 289 543" width="100%" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 0l72.457 72.457L0 144.913l72.457 72.457L0 289.826l72.457 72.456L0 434.739l72.457 72.456-36.229 36.229M72.457 0L0 72.457l72.457 72.457L0 217.37l72.457 72.457L0 362.282l72.457 72.457L0 507.195l36.229 36.229m72.457 0l36.229-36.229-72.457-72.456 72.457-72.457-72.457-72.456 72.457-72.457-72.457-72.457 72.457-72.457L72.457 0m72.457 0L72.457 72.457l72.457 72.457-72.457 72.456 72.457 72.457-72.457 72.456 72.457 72.457-72.457 72.456 36.229 36.229m72.457-.001l36.229-36.229-72.457-72.456 72.457-72.457-72.457-72.456 72.457-72.457-72.457-72.457 72.457-72.457L144.914 0m72.457 0l-72.457 72.457 72.457 72.457-72.457 72.457 72.457 72.457-72.457 72.456 72.457 72.457-72.457 72.456 36.229 36.229m72.457-.002l36.229-36.229-72.457-72.456 72.457-72.457-72.457-72.456 72.457-72.457-72.457-72.457 72.457-72.457L217.371 0m72.457 0l-72.457 72.457 72.457 72.457-72.457 72.457 72.457 72.457-72.457 72.456 72.457 72.457-72.457 72.456 36.229 36.229M18.113 54.343L0 36.229m54.342-18.115L36.229 0M18.113 18.114L36.228 0M126.8 18.114L108.686 0M90.571 18.114L108.686 0m90.571 18.114L181.143 0m0 0l-18.114 18.114m108.56 0L253.475 0M235.36 18.114L253.475 0m18.24 54.343l18.113-18.114m-271.715 90.57L0 108.685m271.715 18.114l18.113-18.114M18.113 199.256L0 181.142m271.715 18.114l18.113-18.114m-271.715 90.57L0 253.598m271.715 18.114l18.113-18.114M72.457 0v36.229L90.57 54.343m-36.029 0l17.916-18.114M144.914 0v36.229l18.113 18.114m-36.029 0l17.916-18.114M217.368 0v36.229l18.114 18.114M36.229 36.229v36.229l18.113 18.114m54.344-54.343v36.229L126.8 90.571m54.343-54.342v36.229l18.114 18.114M253.6 36.229v36.229l18.113 18.114m-72.262-36.229l17.917-18.114M72.457 72.457v36.229L90.57 126.8m-36.029-.001l17.916-18.114m72.457-36.228v36.229l18.113 18.114m-36.029-.001l17.916-18.114m72.447-36.228v36.229l18.114 18.114m-36.03-.001l17.916-18.114M72.457 144.913v36.229l18.113 18.114m-36.029 0l17.916-18.114m72.457-36.229v36.229l18.113 18.114m-36.029 0l17.916-18.114m72.447-36.229v36.229l18.114 18.114m-36.03 0l17.916-18.114M72.457 217.37v36.229l18.113 18.114m-36.029-.001l17.916-18.114m72.457-36.228v36.229l18.113 18.114m-36.029-.001l17.916-18.114m72.447-36.228v36.229l18.114 18.114m-36.03-.001l17.916-18.114M72.457 289.827v36.229L90.57 344.17m-36.029 0l17.916-18.114m72.457-36.229v36.229l18.113 18.114m-36.029 0l17.916-18.114m72.447-36.229v36.229l18.114 18.114m-36.03 0l17.916-18.114M72.457 362.282v36.229l18.113 18.114m-36.029 0l17.916-18.114m72.457-36.229v36.229l18.113 18.114m-36.029 0l17.916-18.114m72.447-36.229v36.229l18.114 18.114m-36.03 0l17.916-18.114M72.457 434.739v36.229l18.113 18.114m-36.029 0l17.916-18.114m72.457-36.229v36.229l18.113 18.114m-36.029 0l17.916-18.114m72.447-36.229v36.229l18.114 18.114m-36.03 0l17.916-18.114M18.313 90.571l17.916-18.114M90.77 90.571l17.916-18.114m54.541 18.114l17.916-18.114m54.541 18.114L253.6 72.457M36.229 108.685v36.229l18.113 18.114m54.344-54.343v36.229l18.114 18.114m54.343-54.343v36.229l18.114 18.114m54.343-54.343v36.229l18.113 18.114m-253.4 0l17.916-18.114m54.541 18.114l17.916-18.114m72.457 0l-17.916 18.114m72.457 0l17.916-18.114M36.229 181.142v36.229l18.113 18.114m54.344-54.343v36.229l18.114 18.114m54.343-54.343v36.229l18.114 18.114m54.343-54.343v36.229l18.113 18.114m-253.4-.001l17.916-18.114m54.541 18.114l17.916-18.114m72.457 0l-17.916 18.114m72.457 0L253.6 217.37M36.229 253.598v36.228l18.113 18.115m54.344-54.343v36.228l18.114 18.115m54.343-54.343v36.228l18.114 18.115m54.343-54.343v36.228l18.113 18.115m-253.4 0l17.916-18.115m54.541 18.115l17.916-18.115m54.541 18.115l17.916-18.115m54.541 18.115l17.916-18.115M18.113 344.159L0 326.046m271.715 18.113l18.113-18.113M18.113 416.625L0 398.512m271.715 18.113l18.113-18.113M18.113 489.081L0 470.968m271.715 18.113l18.113-18.113M36.229 326.046v36.228l18.113 18.115m54.344-54.343v36.228l18.114 18.115m54.343-54.343v36.228l18.114 18.115m54.343-54.343v36.228l18.113 18.115m-253.4 0l17.916-18.115m54.541 18.115l17.916-18.115m72.457-.001l-17.916 18.115m90.373-18.115l-17.916 18.115M36.229 398.511v36.228l18.113 18.115m54.344-54.343v36.228l18.114 18.115m54.343-54.343v36.228l18.114 18.115m54.343-54.343v36.228l18.113 18.115m-253.4 0l17.916-18.115m54.541 18.115l17.916-18.115m54.541 18.115l17.916-18.115m54.541 18.115l17.916-18.115M36.229 470.968v36.228l18.113 18.115m54.344-54.343v36.228l18.114 18.115m54.343-54.343v36.228l18.114 18.115m54.343-54.343v36.228l18.113 18.115m-253.4 0l17.916-18.115m54.541 18.115l17.916-18.115m54.541 18.115l17.916-18.115m72.457-.001l-17.916 18.115M72.457 507.195v36.229m72.457-36.229v36.229m72.457-36.229v36.229" fill="none" stroke="#9A7D57" stroke-miterlimit="10"
+                              stroke-width="1.5"></path>
+                    </svg>
                 </div><!--animationSideImage-->
             </div>
         </div><!--row-->
@@ -315,29 +391,28 @@
                     <div class="hMenuBox">
                         <div class="hMenuTitleBox text-center">
                             <h5 class="MainTitle">
-                            <div class="decor">
-                                <svg height="9.146" width="41.125" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M40.881 8.576L20.562.591.244 8.576" fill="none" stroke="#9C7C57" stroke-miterlimit="10"></path>
-                                    <path d="M40.881.591L20.562 8.576.243.591" fill="none" stroke="#9C7C57" stroke-miterlimit="10"></path>
-                                </svg>
-                            </div>
-                            <span>INDO CHINES</span>
-                            <div class="decor">
-                                <svg height="9.146" width="41.125" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M40.881 8.576L20.562.591.244 8.576" fill="none" stroke="#9C7C57" stroke-miterlimit="10"></path>
-                                    <path d="M40.881.591L20.562 8.576.243.591" fill="none" stroke="#9C7C57" stroke-miterlimit="10"></path>
-                                </svg>
-                            </div>
-                        </h5>
+                                <div class="decor">
+                                    <svg height="9.146" width="41.125" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M40.881 8.576L20.562.591.244 8.576" fill="none" stroke="#9C7C57" stroke-miterlimit="10"></path>
+                                        <path d="M40.881.591L20.562 8.576.243.591" fill="none" stroke="#9C7C57" stroke-miterlimit="10"></path>
+                                    </svg>
+                                </div>
+                                <span>INDO CHINES</span>
+                                <div class="decor">
+                                    <svg height="9.146" width="41.125" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M40.881 8.576L20.562.591.244 8.576" fill="none" stroke="#9C7C57" stroke-miterlimit="10"></path>
+                                        <path d="M40.881.591L20.562 8.576.243.591" fill="none" stroke="#9C7C57" stroke-miterlimit="10"></path>
+                                    </svg>
+                                </div>
+                            </h5>
                             <div class="titleImgFloral">
-                                <img src="https://hyderabadizaiqa.com/wp-content/uploads/2023/06/floral-w.png" class="img-fluid-">
+                                <img class="img-fluid-" src="https://hyderabadizaiqa.com/wp-content/uploads/2023/06/floral-w.png">
                             </div>
                         </div>
                         <div class="hMenuPriceBx">
                             <div class="hMenuTitlePrice">
-                                <h6>STREET CHOWMEIN	</h6>
-                                <span class="hPriceLine"></span>
-                                <span class="hMenuPrice">$11.99</span>
+                                <h6>STREET CHOWMEIN </h6>
+                                <span class="hPriceLine"></span> <span class="hMenuPrice">$11.99</span>
                             </div>
                             <div class="hMenuTxt">
                                 <p>(VEG/EGG/CHICKEN STIR WITH JULLIENE VEGETABLE, NOODLES HOMEMADE SAUCE)</p>
@@ -346,8 +421,7 @@
                         <div class="hMenuPriceBx">
                             <div class="hMenuTitlePrice">
                                 <h6>SPECIAL SPICY CHOWMEIN</h6>
-                                <span class="hPriceLine"></span>
-                                <span class="hMenuPrice">$12.99</span>
+                                <span class="hPriceLine"></span> <span class="hMenuPrice">$12.99</span>
                             </div>
                             <div class="hMenuTxt">
                                 <p>(VEG/EGG/CHICKEN STIR WITH VEGTABLES, NOODLES SPICY HOMEMADE SAUCE)</p>
@@ -356,8 +430,7 @@
                         <div class="hMenuPriceBx">
                             <div class="hMenuTitlePrice">
                                 <h6>STREET FRIED RICE</h6>
-                                <span class="hPriceLine"></span>
-                                <span class="hMenuPrice">$11.99</span>
+                                <span class="hPriceLine"></span> <span class="hMenuPrice">$11.99</span>
                             </div>
                             <div class="hMenuTxt">
                                 <p>(VEG/EGG/CHICKEN STIR WITH VEGATABLES, RICE HOMEMADE SAUCE)</p>
@@ -384,14 +457,13 @@
                                 </div>
                             </h5>
                             <div class="titleImgFloral">
-                                <img src="https://hyderabadizaiqa.com/wp-content/uploads/2023/06/floral-w.png" class="img-fluid-">
+                                <img class="img-fluid-" src="https://hyderabadizaiqa.com/wp-content/uploads/2023/06/floral-w.png">
                             </div>
                         </div>
                         <div class="hMenuPriceBx">
                             <div class="hMenuTitlePrice">
-                                <h6>SGULAB JAMUN (2PCS)	</h6>
-                                <span class="hPriceLine"></span>
-                                <span class="hMenuPrice">$6.49</span>
+                                <h6>SGULAB JAMUN (2PCS) </h6>
+                                <span class="hPriceLine"></span> <span class="hMenuPrice">$6.49</span>
                             </div>
                             <div class="hMenuTxt">
                                 <p>(MILK SOLIDS(KHOYA) MIX WITH FLOUR, GREEN CARDAMON)</p>
@@ -400,8 +472,7 @@
                         <div class="hMenuPriceBx">
                             <div class="hMenuTitlePrice">
                                 <h6>RASMALAI (2PCS)</h6>
-                                <span class="hPriceLine"></span>
-                                <span class="hMenuPrice">$6.49</span>
+                                <span class="hPriceLine"></span> <span class="hMenuPrice">$6.49</span>
                             </div>
                             <div class="hMenuTxt">
                                 <p>(SOFT COTTAGE CHEESE/CHENNA COOK IN SUGAR SYRUP SERVED WITH SAFFRON MILK)</p>
@@ -410,8 +481,7 @@
                         <div class="hMenuPriceBx">
                             <div class="hMenuTitlePrice">
                                 <h6>STREET FRIED RICE</h6>
-                                <span class="hPriceLine"></span>
-                                <span class="hMenuPrice">$11.99</span>
+                                <span class="hPriceLine"></span> <span class="hMenuPrice">$11.99</span>
                             </div>
                             <div class="hMenuTxt">
                                 <p>(VEG/EGG/CHICKEN STIR WITH VEGATABLES, RICE HOMEMADE SAUCE)</p>
@@ -438,14 +508,13 @@
                                 </div>
                             </h5>
                             <div class="titleImgFloral">
-                                <img src="https://hyderabadizaiqa.com/wp-content/uploads/2023/06/floral-w.png" class="img-fluid-">
+                                <img class="img-fluid-" src="https://hyderabadizaiqa.com/wp-content/uploads/2023/06/floral-w.png">
                             </div>
                         </div>
                         <div class="hMenuPriceBx">
                             <div class="hMenuTitlePrice">
-                                <h6>HOME MADE FRIES	</h6>
-                                <span class="hPriceLine"></span>
-                                <span class="hMenuPrice">$6.99</span>
+                                <h6>HOME MADE FRIES </h6>
+                                <span class="hPriceLine"></span> <span class="hMenuPrice">$6.99</span>
                             </div>
                             <div class="hMenuTxt">
                                 <p>(HAND MADE CUT FRIES WITH TOMATO KETCUP)</p>
@@ -454,8 +523,7 @@
                         <div class="hMenuPriceBx">
                             <div class="hMenuTitlePrice">
                                 <h6>SPRING ROLL</h6>
-                                <span class="hPriceLine"></span>
-                                <span class="hMenuPrice">$7.99</span>
+                                <span class="hPriceLine"></span> <span class="hMenuPrice">$7.99</span>
                             </div>
                             <div class="hMenuTxt">
                                 <p>(STUFFED VEG WRAP, FRIED SERVED WITH SWEET CHILLY SAUCE)</p>
@@ -464,8 +532,7 @@
                         <div class="hMenuPriceBx">
                             <div class="hMenuTitlePrice">
                                 <h6>CHICKEN NUGGETS</h6>
-                                <span class="hPriceLine"></span>
-                                <span class="hMenuPrice">$7.99</span>
+                                <span class="hPriceLine"></span> <span class="hMenuPrice">$7.99</span>
                             </div>
                             <div class="hMenuTxt">
                                 <p>(BREADED CHICKEN CUBE SERVED WITH TOMATO SAUCE)</p>
@@ -490,7 +557,8 @@
             <div class="col-lg-4 col-md-6 col-sm-12">
                 <div class="hChef">
                     <div class="hChefImg">
-                        <img src="https://hyderabadizaiqa.com/wp-content/uploads/2023/06/Jayesh-Naik-2.png" alt="" class="img-fluid" width="287" height="287">
+                        <img alt="" class="img-fluid" height="287" src="https://hyderabadizaiqa.com/wp-content/uploads/2023/06/Jayesh-Naik-2.png"
+                             width="287">
                     </div>
                     <div class="MainTitle">
                         <div class="decor">
@@ -512,8 +580,8 @@
             <div class="col-lg-4 col-md-6 col-sm-12">
                 <div class="hChef">
                     <div class="hChefImg">
-                        <img src="https://hyderabadizaiqa.com/wp-content/uploads/2023/06/Mohammad-tarique-K.png" alt="" class="img-fluid"
-                             width="287" height="287">
+                        <img alt="" class="img-fluid" height="287" src="https://hyderabadizaiqa.com/wp-content/uploads/2023/06/Mohammad-tarique-K.png"
+                             width="287">
                     </div>
                     <div class="MainTitle">
                         <div class="decor">
@@ -534,7 +602,7 @@
             </div>
             <div class="col-lg-4 col-md-6 col-sm-12">
                 <div class="hChef">
-                    <span  class="about_subtitle">Meet our chef</span>
+                    <span class="about_subtitle">Meet our chef</span>
                     <div class="MainTitle">
                         <div class="decor">
                             <svg height="9.146" width="41.125" xmlns="http://www.w3.org/2000/svg">
@@ -551,9 +619,7 @@
                         </div>
                     </div><!--MainTitle-->
                     <div class="hChefBtn">
-                        <a href="#" class="doubleLineBtn">
-                            <span>KNOW ABOUT US</span>
-                        </a>
+                        <a class="doubleLineBtn" href="#"> <span>KNOW ABOUT US</span> </a>
                     </div>
                 </div>
             </div>
@@ -565,8 +631,7 @@
         <div class="row">
             <div class="col-lg-5 col-md-6 col-sm-12">
                 <div class="hFranchiseImg">
-                    <img src="https://hyderabadizaiqa.com/wp-content/uploads/2023/06/my-store.png" alt="" title="" class="img-fluid" height="300"
-                         width="300">
+                    <img alt="" class="img-fluid" src="https://hyderabadizaiqa.com/wp-content/uploads/2023/06/my-store.png" title="">
                 </div><!--hFranchiseImg--->
             </div>
             <div class="col-lg-7 col-md-6 col-sm-12">
@@ -588,9 +653,10 @@
                         </div>
                     </div><!--MainTitle-->
                     <div class="hFranchiseTxt">
-                        <p>Ignite your entrepreneurial spirit and embark on a flavourful journey by joining our franchise expansion of Hyderabadi Zaida, where the essence of Indian cuisine awaits eager minds and palates.</p>
+                        <p>Ignite your entrepreneurial spirit and embark on a flavourful journey by joining our franchise expansion of Hyderabadi
+                            Zaida, where the essence of Indian cuisine awaits eager minds and palates.</p>
                         <div class="franchiseBtn">
-                            <a href="#" class="simpleHoverBtn">Franchise</a>
+                            <a class="simpleHoverBtn" href="#">Franchise</a>
                         </div>
                     </div>
                 </div><!--hFranchiseCnt-->
@@ -615,19 +681,29 @@
                         </div>
                     </div><!--MainTitle-->
                     <div class="hFranchiseTxt">
-                        <p>Ignite your entrepreneurial spirit and embark on a flavourful journey by joining our franchise expansion of Hyderabadi Zaida, where the essence of Indian cuisine awaits eager minds and palates.</p>
+                        <p>Ignite your entrepreneurial spirit and embark on a flavourful journey by joining our franchise expansion of Hyderabadi
+                            Zaida, where the essence of Indian cuisine awaits eager minds and palates.</p>
                         <div class="franchiseBtn">
-                            <a href="#" class="simpleHoverBtn">Franchise</a>
+                            <a class="simpleHoverBtn" href="#">Franchise</a>
                         </div>
                     </div>
                 </div><!--hFranchiseCnt-->
             </div>
             <div class="col-lg-5 col-md-6 col-sm-12">
                 <div class="hFranchiseImg text-end">
-                    <img src="https://hyderabadizaiqa.com/wp-content/uploads/2023/06/Catering-1.png" alt="" title="" class="img-fluid" height="300"
-                         width="300">
+                    <img alt="" class="img-fluid" src="https://hyderabadizaiqa.com/wp-content/uploads/2023/06/Catering-1.png" title="">
                 </div><!--hFranchiseImg--->
             </div>
         </div><!--row-->
     </div><!--container-xxl-->
 </section>
+
+
+<ng-template #content>
+    <div class="modal-body" style="background-color: #0B1315">
+        <video autoplay="autoplay" controls style="width: 100%;">
+            <source src="/assets/video/Cafe-Video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+</ng-template>

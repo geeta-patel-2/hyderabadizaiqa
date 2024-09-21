@@ -1,9 +1,11 @@
 .innerBanner {
+  position: relative;
   .innerBanner_title {
-    position: relative;
-    display: table;
-    table-layout: fixed;
-    height: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top:50%;
+    transform: translateY(-50%);
     width: 100%;
   }
   .bannerTitleDecor {
@@ -16,5 +18,9 @@
     width: auto;
     display: inline-block;
     vertical-align: middle;
+    padding: 0 20px;
   }
 }
+
+
+

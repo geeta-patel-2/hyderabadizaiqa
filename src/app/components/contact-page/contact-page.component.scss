@@ -1,4 +1,12 @@
-.contact_banner{
+.innerBanner{
+  background: url("https://hyderabadizaiqa.com/wp-content/uploads/2023/06/desktop-wallpaper-motifs-background-noir.jpg") no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding:100px 0;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 100%;
   .contact_banner_title {
     position: relative;
     display: table;
@@ -168,6 +176,32 @@ form{
     background: transparent;
     border:1px solid #c9ab81;
     color: #fff;
+    &:before, &:after{
+      content: '';
+      position: absolute;
+      left: 21px;
+      top: -14px;
+      width: 0;
+      height:0;
+      background: #c9ab81;
+      transition: width 2s;
+      transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
+      will-change: transform;
+      transform: rotate(72deg) scale(1, 0);
+
+
+    }
+    &:after{
+      transform-origin: bottom;
+      top: -2px;
+      right: 42px;
+      left: auto;
+    }
+    &:hover:before, &:hover:after{
+      height: 48px;
+      width: 1px;
+      transform: rotate(65deg) scale(1, 1);
+    }
   }
 
 

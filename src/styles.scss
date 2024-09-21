@@ -2,6 +2,31 @@
 
 /* Importing Bootstrap SCSS file. */
 @import 'bootstrap/scss/bootstrap';
+/*Font Family Css*/
+
+@font-face {
+  font-family: 'caviar_dreams';
+  src: url('/assets/fonts/caviardreams-webfont.woff2') format('woff2'),
+  url('/assets/fonts/caviardreams-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+
+
+@font-face {
+  font-family: 'caviar_dreamsitalic';
+  src: url('/assets/fonts/caviardreams_italic-webfont.woff2') format('woff2'),
+  url('/assets/fonts/caviardreams_italic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+/*Font-family css end*/
+
 body {
   font-family: "Josefin Sans", sans-serif;
   font-size: 19px;
@@ -13,7 +38,23 @@ body {
   background-color: #0b1315;
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden !important;
+  position: relative;
+  &:before, &:after{
+    content: '';
+    position: absolute;
+    left:110px;
+    top: 0;
+    height: 100%;
+    width: 1px;
+    background-color: #9a7c53;
+    z-index: 999;
+  }
+  &:after{
+    right: 110px;
+    left: auto;
+  }
 }
+
 p {
   margin:0;
   padding-bottom: 20px;
@@ -34,7 +75,7 @@ ul {
   }
 }
 h1, h2, h3, h4, h5, h6 {
-  font-family: caviar_dreamsbold, sans-serif;
+  font-family: 'caviar_dreams', sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   color: #c9ab81;
@@ -52,9 +93,22 @@ h5 {
   line-height: 1.52em;
   letter-spacing: .23em;
 }
+/*Font Family*/
+.miniverFont{
+  font-family: "Miniver", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
 /*background color */
 .bg_black { background: #000;}
 .bg_blue { background:#0F1D22; }
+
+/*background image*/
+.bgImage{
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+}
 /*sub title*/
 .mainTitle_subtitle{
   font-family: Miniver, sans-serif;
@@ -261,6 +315,61 @@ h5 {
   color: #fff;
 }
 
+.ButtonStyleTwo {
+  color: #fff;
+  background-color: transparent;
+  border: 1px solid #c9ab81;
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  width: auto;
+  margin: 0;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 14px;
+  line-height: 2em;
+  font-weight: 300;
+  letter-spacing: .36em;
+  text-transform: uppercase;
+  outline: 0;
+  box-sizing: border-box;
+  -webkit-transition: color .2s ease-in-out, background-color .2s ease-in-out, border-color .2s ease-in-out;
+  transition: color .2s ease-in-out, background-color .2s ease-in-out, border-color .2s ease-in-out;
+  padding: 9px 39px;
+  cursor: pointer;
+  &:before, &:after{
+    content: "";
+    position: absolute;
+    left: 24px;
+    margin-top: 0;
+    top: 0;
+    width: 1px;
+    height: 0;
+    background: #9a7c53;
+    transform: rotate(72deg) scale(1,0);
+    opacity: 0;
+    transition: height .4s;
+    display: inline-block;
+  }
+  &:after {
+    top: auto;
+    margin-bottom: 0;
+    left: auto;
+    right: 24px;
+    bottom: 0;
+  }
+  &:hover:before, &:hover:after{
+    height: 52px;
+    transform: rotate(72deg) scale(1,1);
+    opacity: 1;
+    top: -18px;
+
+  }
+  &:hover:after{
+    top:12px
+  }
+}
+
+
 .singlePatternAnimation {
   svg{
     /*path{
@@ -279,3 +388,4 @@ h5 {
   }
 
 }
+.container-fluid{ padding:0 50px !important;}
