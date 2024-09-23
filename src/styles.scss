@@ -14,8 +14,6 @@
 }
 
 
-
-
 @font-face {
   font-family: 'caviar_dreamsitalic';
   src: url('/assets/fonts/caviardreams_italic-webfont.woff2') format('woff2'),
@@ -39,41 +37,47 @@ body {
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden !important;
   position: relative;
-  &:before, &:after{
+
+  &:before, &:after {
     content: '';
     position: absolute;
-    left:110px;
+    left: 110px;
     top: 0;
     height: 100%;
     width: 1px;
     background-color: #9a7c53;
     z-index: 999;
   }
-  &:after{
+
+  &:after {
     right: 110px;
     left: auto;
   }
 }
 
 p {
-  margin:0;
+  margin: 0;
   padding-bottom: 20px;
   line-height: 29px;
   font-size: 19px;
 
 }
+
 a {
   text-decoration-line: none;
 }
+
 ul {
   margin: 0;
   padding: 0;
-  & li{
+
+  & li {
     list-style: none;
     margin: 0;
     padding: 0;
   }
 }
+
 h1, h2, h3, h4, h5, h6 {
   font-family: 'caviar_dreams', sans-serif;
   font-weight: 700;
@@ -83,34 +87,44 @@ h1, h2, h3, h4, h5, h6 {
   -ms-word-wrap: break-word;
   word-wrap: break-word;
 }
+
 h2 {
   font-size: 41px;
   line-height: 1.31em;
   letter-spacing: .23em;
 }
+
 h5 {
   font-size: 19px;
   line-height: 1.52em;
   letter-spacing: .23em;
 }
+
 /*Font Family*/
-.miniverFont{
+.miniverFont {
   font-family: "Miniver", cursive;
   font-weight: 400;
   font-style: normal;
 }
+
 /*background color */
-.bg_black { background: #000;}
-.bg_blue { background:#0F1D22; }
+.bg_black {
+  background: #000;
+}
+
+.bg_blue {
+  background: #0F1D22;
+}
 
 /*background image*/
-.bgImage{
+.bgImage {
   background-position: center center !important;
   background-repeat: no-repeat !important;
   background-size: cover !important;
 }
+
 /*sub title*/
-.mainTitle_subtitle{
+.mainTitle_subtitle {
   font-family: Miniver, sans-serif;
   font-size: 19px;
   font-weight: 400;
@@ -122,27 +136,33 @@ h5 {
   display: block;
   margin-bottom: 13px;
 }
+
 /*title decor design css*/
-.MainTitle{
+.MainTitle {
   display: inline-flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
   position: relative;
-  h2{
-    padding:0 20px;
+
+  h2 {
+    padding: 0 20px;
   }
+
   .decor {
     color: #c9ab81;
     position: relative;
-    :first-child{
+
+    :first-child {
       left: -30px;
     }
-    :last-child{
+
+    :last-child {
       right: -20px;
     }
   }
 }
+
 /*button css*/
 .simpleHoverBtn {
   color: #fff;
@@ -166,9 +186,11 @@ h5 {
   padding: 9px 39px;
   cursor: pointer;
 }
+
 .simpleHoverBtn:hover {
   background: transparent;
 }
+
 .doubleLineBtn {
   color: #fff;
   line-height: 2.3em;
@@ -188,7 +210,8 @@ h5 {
   transition: color .2s ease-in-out, background-color .2s ease-in-out, border-color .2s ease-in-out;
   padding: 9px 39px;
   cursor: pointer;
-  &:before, &:after{
+
+  &:before, &:after {
     content: '';
     position: absolute;
     bottom: -1px;
@@ -231,11 +254,13 @@ h5 {
   color: #fff;
   background-color: transparent;
   border: 1px solid #c9ab81;
+
   svg {
     position: absolute;
     bottom: 0;
     width: auto;
     height: 100%;
+
     polyline:nth-child(3), polyline:nth-child(4) {
       -webkit-animation: out 1s backwards 0s;
       animation: out 1s backwards 0s;
@@ -259,20 +284,24 @@ h5 {
 
 
   }
+
   .btnSvg-left {
     left: 0;
   }
+
   .btnSvg-right {
     right: 0;
     -webkit-transform: rotate(180deg);
     -ms-transform: rotate(180deg);
     transform: rotate(180deg);
   }
-  &:hover svg  {
-    polyline:nth-child(3), polyline:nth-child(4){
+
+  &:hover svg {
+    polyline:nth-child(3), polyline:nth-child(4) {
       -webkit-animation: in 1s forwards 0s;
       animation: in 1s forwards 0s;
     }
+
     @-webkit-keyframes in {
       0% {
         stroke-dashoffset: 57;
@@ -291,7 +320,8 @@ h5 {
     }
   }
 }
-.btn-animationSlant{
+
+.btn-animationSlant {
   position: relative;
   display: inline-block;
   vertical-align: middle;
@@ -336,7 +366,8 @@ h5 {
   transition: color .2s ease-in-out, background-color .2s ease-in-out, border-color .2s ease-in-out;
   padding: 9px 39px;
   cursor: pointer;
-  &:before, &:after{
+
+  &:before, &:after {
     content: "";
     position: absolute;
     left: 24px;
@@ -345,11 +376,12 @@ h5 {
     width: 1px;
     height: 0;
     background: #9a7c53;
-    transform: rotate(72deg) scale(1,0);
+    transform: rotate(72deg) scale(1, 0);
     opacity: 0;
     transition: height .4s;
     display: inline-block;
   }
+
   &:after {
     top: auto;
     margin-bottom: 0;
@@ -357,29 +389,31 @@ h5 {
     right: 24px;
     bottom: 0;
   }
-  &:hover:before, &:hover:after{
+
+  &:hover:before, &:hover:after {
     height: 52px;
-    transform: rotate(72deg) scale(1,1);
+    transform: rotate(72deg) scale(1, 1);
     opacity: 1;
     top: -18px;
 
   }
-  &:hover:after{
-    top:12px
+
+  &:hover:after {
+    top: 12px
   }
 }
 
 
 .singlePatternAnimation {
-  svg{
+  svg {
     /*path{
       stroke-dashoffset: 770;
       stroke-dasharray: 770;
       -webkit-transition: all 2s ease;
       transition: all 2s ease;
     }*/
-    .pageLoadSinglePattern{
-      path{
+    .pageLoadSinglePattern {
+      path {
         stroke-dashoffset: 0;
         -webkit-transition: all 2s ease;
         transition: all 2s ease;
@@ -388,4 +422,11 @@ h5 {
   }
 
 }
-.container-fluid{ padding:0 50px !important;}
+
+.container-fluid {
+  padding: 0 50px !important;
+}
+
+.imgSlidePopUp > .modal-content > .modal-body {
+  padding: 0 !important;
+}
