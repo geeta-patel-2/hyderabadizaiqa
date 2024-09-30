@@ -1,6 +1,6 @@
 <section class="gallerySec pt-lg-5 pb-lg-5 pb-sm-4 pt-sm-4">
     <div class="container-xxl">
-        <div class="PhotoGalleryTitle text-center pt-lg-5 pt-md-4 pb-lg-4 pb-md-4">
+        <div class="PhotoGalleryTitle text-center pt-lg-5 pt-md-4 pb-lg-5 pb-md-4">
             <div class="MainTitle">
                 <div class="decor">
                     <svg height="9.146" width="41.125" xmlns="http://www.w3.org/2000/svg">
@@ -16,8 +16,11 @@
                     </svg>
                 </div>
             </div><!--MainTitle-->
+            <div class="TitleImg">
+                <img src="/assets/images/floral_w.png" alt="" class="img-fluid">
+            </div>
         </div><!--abTestimonialTitle-->
-        <div class="photoGallerySec">
+        <div class="photoGallerySec mt-lg-5 mt-sm-3">
             <div class="row">
                 <div class="col-lg-4 col-md-6 col-sm-12" *ngFor="let img of galleryImages" (click)="open(content)">
                     <div class="photoGallery mb-lg-4 mb-4 slideInDown">
@@ -32,11 +35,13 @@
             </div>
             <ng-template #content let-modal>
                 <div class="modal-body">
+                    <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
                     @if (galleryImages) {
                         <ngb-carousel>
                             <ng-template ngbSlide *ngFor="let img of galleryImages">
-                                <div class="picsum-img-wrapper">
-                                    <img [src]="img.imageSource" alt="Random first slide" />
+
+                                <div class="picsum-img-wrapper w-60">
+                                    <img [src]="img.imageSource" alt="Random first slide" style="width: 550px; height: 550px;" />
                                 </div>
                             </ng-template>
                         </ngb-carousel>

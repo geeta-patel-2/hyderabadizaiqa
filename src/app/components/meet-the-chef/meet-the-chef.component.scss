@@ -22,5 +22,20 @@
   }
 }
 
-
+.meetMenuRow {
+  padding:100px 0 50px;
+  .ourMenu_txt{
+    margin-bottom:80px;
+  }
+}
+.chefImage {
+  position: relative;
+  .chefImgBgImg{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: -1;
+  }
+}
 

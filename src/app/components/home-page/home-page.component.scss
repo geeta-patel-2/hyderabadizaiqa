@@ -1,12 +1,26 @@
 .HomepageBanner {
   position: relative;
-  top:-140px;
+  top: -140px;
   width: 100%;
   left: 0;
-  .carousel-caption{
+
+  .carousel-caption {
     top: 50%;
     transform: translateY(-50%);
     bottom: auto;
+  }
+
+  .SubTitle {
+    font-family: "Miniver", cursive;
+    color: #c9ab81;
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  p {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 23px;
+    line-height: 33px;
   }
 }
 
@@ -25,13 +39,21 @@
     width: 75%;
   }
 }
+
+.hMenuSection {
+  .menuRow {
+    margin-top: 50px;
+  }
+}
+
 .hMenuPriceBx {
-  .hMenuTitlePrice{
+  .hMenuTitlePrice {
     h6 {
       display: inline-block;
       vertical-align: middle;
       width: auto;
     }
+
     .hPriceLine {
       display: inline-block;
       vertical-align: middle;
@@ -39,7 +61,7 @@
       border-bottom: 1px solid #715b3e;
       position: relative;
 
-      &:before{
+      &:before {
         content: '';
         position: absolute;
         bottom: 5px;
@@ -47,7 +69,8 @@
         border-bottom: 1px solid #715b3e;
       }
     }
-    .hMenuPrice{
+
+    .hMenuPrice {
       font-family: caviar_dreamsbold, sans-serif;
       font-weight: 700;
       text-transform: uppercase;
@@ -64,7 +87,8 @@
       width: 1%;
       white-space: nowrap;
     }
-    }
+  }
+
   .hMenuTxt {
     p {
       font-size: 19px;
@@ -72,11 +96,26 @@
       text-transform: lowercase;
     }
   }
-  }
-.hFranchiseExpansion   {
-  .row{
+}
+
+.hFranchiseExpansion {
+
+  .row {
     div {
-      padding:30px 0;
+      padding: 30px 0;
+      text-align: center;
+      .hFranchiseImg {
+        img {
+          width: 70%;
+        }
+      }
+      .imgTagline {
+         color:#c9ab81;
+        font-size: 19px;
+        font-weight: 400;
+        line-height: 28px;
+        letter-spacing: .04em;
+      }
       .hFranchiseTxt {
         padding-top: 0;
       }
@@ -84,10 +123,12 @@
   }
 
 }
-.storyLogo  {
-  width:258px;
+
+.storyLogo {
+  width: 258px;
   position: relative;
-  .play_btn{
+
+  .play_btn {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -96,7 +137,8 @@
     transform: translate(-50%, -50%);
     background: transparent;
     border: none;
-    svg{
+
+    svg {
       color: #c9ab81;
     }
   }

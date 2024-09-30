@@ -46,7 +46,7 @@ export class PhotoGalleryComponent {
             ariaLabelledBy: 'modal-basic-title',
             modalDialogClass: 'imgSlidePopUp',
             centered: true,
-            size: "xl",
+            size: "",
             animation: true,
             keyboard: true
         }).result.then(

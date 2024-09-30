@@ -2,28 +2,6 @@
 
 /* Importing Bootstrap SCSS file. */
 @import 'bootstrap/scss/bootstrap';
-/*Font Family Css*/
-
-@font-face {
-  font-family: 'caviar_dreams';
-  src: url('/assets/fonts/caviardreams-webfont.woff2') format('woff2'),
-  url('/assets/fonts/caviardreams-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-
-}
-
-
-@font-face {
-  font-family: 'caviar_dreamsitalic';
-  src: url('/assets/fonts/caviardreams_italic-webfont.woff2') format('woff2'),
-  url('/assets/fonts/caviardreams_italic-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-
-}
-
-/*Font-family css end*/
 
 body {
   font-family: "Josefin Sans", sans-serif;
@@ -88,6 +66,12 @@ h1, h2, h3, h4, h5, h6 {
   word-wrap: break-word;
 }
 
+h1 {
+  font-size: 48px;
+  line-height: 1.27em;
+  letter-spacing: .22em;
+}
+
 h2 {
   font-size: 41px;
   line-height: 1.31em;
@@ -106,7 +90,6 @@ h5 {
   font-weight: 400;
   font-style: normal;
 }
-
 /*background color */
 .bg_black {
   background: #000;
@@ -115,6 +98,10 @@ h5 {
 .bg_blue {
   background: #0F1D22;
 }
+/*padding css start*/
+.ptb-80 { padding:80px; }
+/*padding css end */
+
 
 /*background image*/
 .bgImage {
@@ -136,22 +123,19 @@ h5 {
   display: block;
   margin-bottom: 13px;
 }
-
-/*title decor design css*/
-.MainTitle {
-  display: inline-flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  position: relative;
-
-  h2 {
-    padding: 0 20px;
-  }
-
-  .decor {
+/*banner title decor*/
+.innerBanner_title{
+  .bannerTitleDecor {
     color: #c9ab81;
     position: relative;
+    transform: rotate(180deg);
+    svg {
+      path{
+        stroke-dashoffset: 57;
+        stroke-dasharray: 57;
+        animation: 1.2s eltdfDrawDecor forwards;
+      }
+    }
 
     :first-child {
       left: -30px;
@@ -162,7 +146,80 @@ h5 {
     }
   }
 }
+@-webkit-keyframes eltdfDrawDecor {
+  from {
+    stroke-dashoffset: 57;
+    stroke-dasharray: 57;
+  }
+  to {
+    stroke-dashoffset: 0;
+    stroke-dasharray: 57;
+  }
+}
+@keyframes eltdfDrawDecor {
+  from {
+    stroke-dashoffset: 57;
+    stroke-dasharray: 57;
+  }
+  to {
+    stroke-dashoffset: 0;
+    stroke-dasharray: 57;
+  }
+}
 
+/*title decor design css*/
+.MainTitle {
+  display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+
+  h2, h1, h4 {
+    padding: 0 20px;
+  }
+
+  .decor {
+    color: #c9ab81;
+    position: relative;
+    transform: rotate(180deg);
+    svg {
+      path{
+        stroke-dashoffset: 57;
+        stroke-dasharray: 57;
+        animation: 1.2s eltdfDrawDecor forwards;
+      }
+    }
+
+    :first-child {
+      left: -30px;
+    }
+
+    :last-child {
+      right: -20px;
+    }
+  }
+}
+@-webkit-keyframes eltdfDrawDecor {
+  from {
+    stroke-dashoffset: 57;
+    stroke-dasharray: 57;
+  }
+  to {
+    stroke-dashoffset: 0;
+    stroke-dasharray: 57;
+  }
+}
+@keyframes eltdfDrawDecor {
+  from {
+    stroke-dashoffset: 57;
+    stroke-dasharray: 57;
+  }
+  to {
+    stroke-dashoffset: 0;
+    stroke-dasharray: 57;
+  }
+}
 /*button css*/
 .simpleHoverBtn {
   color: #fff;
@@ -257,32 +314,18 @@ h5 {
 
   svg {
     position: absolute;
-    bottom: 0;
+    top: 0;
     width: auto;
     height: 100%;
 
+
     polyline:nth-child(3), polyline:nth-child(4) {
-      -webkit-animation: out 1s backwards 0s;
+
+      stroke-dashoffset: 57;
+      stroke-dasharray: 57;
       animation: out 1s backwards 0s;
-      @-webkit-keyframes out {
-        100% {
-          stroke-dashoffset: 57;
-        }
-        0% {
-          stroke-dashoffset: 0;
-        }
-      }
-      @keyframes out {
-        100% {
-          stroke-dashoffset: 57;
-        }
-        0% {
-          stroke-dashoffset: 0;
-        }
-      }
+
     }
-
-
   }
 
   .btnSvg-left {
@@ -295,31 +338,49 @@ h5 {
     -ms-transform: rotate(180deg);
     transform: rotate(180deg);
   }
-
   &:hover svg {
     polyline:nth-child(3), polyline:nth-child(4) {
-      -webkit-animation: in 1s forwards 0s;
       animation: in 1s forwards 0s;
-    }
-
-    @-webkit-keyframes in {
-      0% {
-        stroke-dashoffset: 57;
-      }
-      100% {
-        stroke-dashoffset: 0;
-      }
-    }
-    @keyframes in {
-      0% {
-        stroke-dashoffset: 57;
-      }
-      100% {
-        stroke-dashoffset: 0;
-      }
     }
   }
 }
+
+@-webkit-keyframes in {
+  0% {
+    stroke-dashoffset: 57;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes in {
+  0% {
+    stroke-dashoffset: 57;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@-webkit-keyframes out {
+  100% {
+    stroke-dashoffset: 57;
+  }
+  0% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes out {
+  100% {
+    stroke-dashoffset: 57;
+  }
+  0% {
+    stroke-dashoffset: 0;
+  }
+}
+
 
 .btn-animationSlant {
   position: relative;
@@ -429,4 +490,15 @@ h5 {
 
 .imgSlidePopUp > .modal-content > .modal-body {
   padding: 0 !important;
+}
+
+.imgSlidePopUp > .modal-content > .modal-body > .btn-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 99;
+
+  &:focus {
+    box-shadow: none;
+  }
 }

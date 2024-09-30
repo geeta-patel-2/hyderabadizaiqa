@@ -1,19 +1,22 @@
-.about_banner{
+.about_banner {
   position: relative;
-  .about_banner_title {
+
+  .innerBanner_title {
     position: absolute;
     left: 0;
     right: 0;
-    top:50%;
+    top: 50%;
     transform: translateY(-50%);
     width: 100%;
   }
+
   .bannerTitleDecor {
     color: #9c7c57;
     display: inline-block;
     vertical-align: middle;
     width: auto;
   }
+
   h1 {
     width: auto;
     display: inline-block;
@@ -23,10 +26,15 @@
 
 }
 
-.about_content_sec{
-  background: #000;
-  padding:50px 0;
-  .decor{
+.about_content_sec {
+
+  padding: 70px 0;
+
+  p {
+    padding-bottom: 40px;
+  }
+
+  .decor {
     color: #c9ab81;
     position: relative;
     display: inline-block;
@@ -34,29 +42,48 @@
     width: auto;
   }
 }
-.AboutChefTwoColSec{
+
+.AboutChefTwoColSec {
   .singlePatternAnimation {
-    padding: 0 168px;
+    padding: 0 58px;
   }
-  .AbChefTitle{
+
+  .AbChefTitle {
     h5 {
-      font-size:19px;
+      font-size: 19px;
       line-height: 1.52em;
     }
   }
 }
-.testimonialSlider{
-  width: 50%;
-  margin: 0 auto;
-  padding-bottom: 60px;
-  .carousel-caption{
-    position: relative;
-    bottom: auto;
-    right: 0;
-    left: 0;
-    padding: 10px 0;
-    h3 {
-      margin: 0;
+.abTestimonial {
+  padding: 90px 0;
+}
+.testimonialSec {
+  .quote {
+    margin:40px 0 50px;
+  }
+
+  .testimonialSlider {
+    width: 50%;
+    margin: 0 auto;
+    padding-bottom: 60px;
+
+    .carousel-caption {
+      position: relative;
+      bottom: auto;
+      right: 0;
+      left: 0;
+      padding: 10px 0;
+
+      h5{
+        margin: 0 0 10px;
+      }
+    }
+
+    .picsum-img-wrapper {
+      p {
+        font-family: Miniver, sans-serif;
+      }
     }
   }
 }
