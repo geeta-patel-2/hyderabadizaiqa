@@ -1,0 +1,75 @@
+<section class="menuDetails pt-lg-4 pb-md-3 pb-lg-4 pb-md-3">
+    <div class="container-xxl">
+        <div class="franchiseeBreadcrumbSec">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="frTitle">
+                        <h5 class="m-0"></h5>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <nav aria-label="breadcrumb" style="--bs-breadcrumb-divider: '>>';">
+                        <ol class="breadcrumb m-0 justify-content-end">
+                            <li class="breadcrumb-item"><a href="#">Home</a></li>
+                            <li class="breadcrumb-item"><a href="#">Our Menu</a></li>
+                            <li aria-current="page" class="breadcrumb-item active">All Menu</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div><!--franchiseeBreadcrumbSec-->
+    </div>
+</section>
+<section class="menuDetailsSec">
+    <div class="container-xxl">
+        <div class="menuContentTitle text-center">
+            <span class="mainTitle_subtitle m-0 miniverFont">HYDERABADI ZAIQA</span>
+
+        </div>
+        <div class="mdTitleCnt text-center">
+            <p>Tantalize your taste bud for an unforgettable dining experience at Hyderabadi Zaiqa.</p>
+        </div>
+        <div class="menuDetailsTwoColSec">
+            <div *ngFor="let category of categories" class="mdDetailRow" >
+                <div class="mdListTitle">
+                    <h3>{{category.categoryName}}</h3>
+                </div>
+                <div class="row">
+                    <div class="col-6 mdRowMainBx" *ngFor="let item of category.items">
+                        <div class="mdRowTwoColBx">
+                            <div class="row">
+                            <div class="col-3">
+                                <div class="mdImg">
+                                    <img [src]="item.imageUri" class="img-fluid"/>
+                                </div>
+                            </div>
+                            <div class="col-9">
+                                <div class="row">
+                                    <div class="col-7">
+                                        <div class="mdPriceTitle">
+                                            {{ item.name }}
+                                        </div>
+                                    </div>
+                                    <div class="col-5 text-end">
+                                        <div class="mdPriceTxt">
+                                            {{ item.price }} $
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="mdPriceDec">
+                                            {{ item.details }}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div><!--container-xxl-->
+</section>

@@ -1,0 +1,60 @@
+.menuDetails {
+  .breadcrumb {
+    li {
+      color: #fff;
+      font-size: 18px;
+      a {
+        position: relative;
+        display: inline-block;
+        vertical-align: middle;
+        color: inherit;
+        &:hover {
+          color:#c9ab81;
+        }
+      }
+      &:before {
+        color:#c9ab81 ;
+        padding:0 12px;
+      }
+    }
+  }
+}
+.menuDetailsTwoColSec {
+  margin-top: 50px;
+  .mdRowMainBx{
+    margin-bottom: 40px;
+    .mdRowTwoColBx{
+      display: inline-block;
+      width: 100%;
+      vertical-align: top;
+      border: 1px solid #ccc;
+      padding: 20px 10px;
+      .mdPriceTitle{
+        font-size: 17px;
+        line-height: 1.58em;
+        letter-spacing: 1px;
+        font-weight: 700;
+        margin: 0;
+      }
+      .mdPriceTxt {
+        font-family: caviar_dreamsbold, sans-serif;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: #c9ab81;
+        -ms-word-wrap: break-word;
+        word-wrap: break-word;
+        font-size: 15px;
+        line-height: 1.52em;
+        letter-spacing: .03em;
+        margin: 0;
+      }
+      .mdPriceDec {
+        p{
+          margin: 4px 0 0;
+          text-transform: lowercase;
+          color: #fff;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,618 @@
+[
+  {
+    "categoryName": "Shorba (SOUP)",
+    "items": [
+      {
+        "name": "Paya Soup",
+        "price": "10.99",
+        "details": "Goat trotters broth infused with ground spices and fresh cilantro",
+        "imageUri": "assets/images/food-img.jpg"
+      },
+      {
+        "name": "Lentil (Veg / Non-Veg)",
+        "price": "6.99 / 7.99",
+        "details": "Lentil puree with curry leaf, ginger, lime juice, finish with coconut milk",
+        "imageUri": "assets/images/food-img.jpg"
+      },
+      {
+        "name": "Manchow (Veg / Non-Veg)",
+        "price": "6.99 / 7.99",
+        "details": "Vegetable/Chicken broth with soy, vinegar and garlic",
+        "imageUri": "assets/images/food-img.jpg"
+      }
+    ]
+  },
+  {
+    "categoryName": "CHAT",
+    "items": [
+      {
+        "name": "Samosa",
+        "price": "8.99",
+        "details": "Savory fried pastries, chickpeas, tamarind, ginger, sweet curd",
+        "imageUri": "assets/images/food-img.jpg"
+      },
+      {
+        "name": "Aloo Papdi",
+        "price": "8.99",
+        "details": "Dice potato, crispy lentil, onion, tomato, tamarind, mint, sweet curd",
+        "imageUri": "assets/images/food-img.jpg"
+      }
+    ]
+  },
+  {
+    "categoryName": "VEG APPETIZER",
+    "items": [
+      {
+        "name": "Samosa",
+        "price": "8.99",
+        "details": "Stuffed potato, green peas aromatic spices",
+        "imageUri": "assets/images/food-img.jpg"
+      },
+      {
+        "name": "Gobi 65",
+        "price": "12.49",
+        "details": "Fry Cauliflower mix with curry leaf yogurt sauce",
+        "imageUri": "assets/images/food-img.jpg"
+      },
+      {
+        "name": "Gobi vepudu",
+        "price": "12.49",
+        "details": "Fry cauliflower mix with pepper, coriander and spices",
+        "imageUri": "assets/images/food-img.jpg"
+      },
+      {
+        "name": "Chilly baby corn",
+        "price": "12.49",
+        "details": "Coated baby corn mix with chilly sauce",
+        "imageUri": "assets/images/food-img.jpg"
+      },
+      {
+        "name": "Gobi manchurian",
+        "price": "12.49",
+        "details": "coated cauliflower mix with Manchurian sauce",
+        "imageUri": "assets/images/food-img.jpg"
+      },
+      {
+        "name": "Baby corn pepper fry",
+        "price": "12.49",
+        "details": "Marinated baby corn mix with pepper sauce",
+        "imageUri": "assets/images/food-img.jpg"
+      },
+      {
+        "name": "Chilly paneer",
+        "price": "13.49",
+        "details": "Deep fried paneer mix with chilly sauce",
+        "imageUri": "assets/images/food-img.jpg"
+      }
+    ]
+  },
+  {
+    "categoryName": "NON-VEG APPETIZER",
+    "items": [
+      {
+        "name": "Chicken 65",
+        "price": "12.49",
+        "details": "Boneless chicken coated mix with curd, curry leaf sauce",
+        "imageUri": "assets/images/food-img.jpg"
+      },
+      {
+        "name": "Chilly chicken",
+        "price": "12.49",
+        "details": "fried chicken sauteed with onion bell pepper, chilly sauce",
+        "imageUri": "assets/images/food-img.jpg"
+      },
+      {
+        "name": "Chicken lollipops 4cp (dry)",
+        "price": "13.99",
+        "details": "chicken wings marinated with grind spices, fried",
+        "imageUri": "assets/images/food-img.jpg"
+      },
+      {
+        "name": "Hz special chicken lollipops",
+        "price": "14.99",
+        "details": "Fry wings mix with house special sauce",
+        "imageUri": "assets/images/food-img.jpg"
+      },
+      {
+        "name": "Pepper chicken",
+        "price": "12.49",
+        "details": "Marinated cubes chicken, deep freid mix with ground pepper\nand spices",
+        "imageUri": "assets/images/food-img.jpg"
+      },
+      {
+        "name": "Chicken vepudu",
+        "price": "12.49",
+        "details": "Marinated chicken cubes mix with onion, cliantro,\ncreamy sauce",
+        "imageUri": "assets/images/food-img.jpg"
+      },
+      {
+        "name": "Chilly fish",
+        "price": "13.49",
+        "details": "Fried boneless fish mix with chilly sauce",
+        "imageUri": "assets/images/food-img.jpg"
+      },
+      {
+        "name": "Apollo fish",
+        "price": "13.49",
+        "details": "Fry boneless fish mix with slit chilly and curd sauce",
+        "imageUri": "assets/images/food-img.jpg"
+      },
+      {
+        "name": "Shrimp pepper fry",
+        "price": "17.99",
+        "details": "Fry shrimp mix with onion, pepper sauce",
+        "imageUri": "assets/images/food-img.jpg"
+      },
+      {
+        "name": "Goat sukha (with bone)",
+        "price": "18.49",
+        "details": "Juicy tender goat mix with onion and pepper sauce",
+        "imageUri": "assets/images/food-img.jpg"
+      }
+    ]
+  },
+  {
+    "categoryName": "TANDOORI KEBAB SPE(VEG)",
+    "items": [
+      {
+        "name": "Paneer tikka",
+        "price": "12.49",
+        "details": "Indian cottage cheese marinated with dry fenugreek,\nRed chilly, cream cheese",
+        "imageUri": "assets/images/food-img.jpg"
+      },
+      {
+        "name": "Dahi kebab (4pcs)",
+        "price": "12.49",
+        "details": "Mixture of hang curd, cilantro, chilly, finish with vermicelli\nAnd deep fried",
+        "imageUri": "assets/images/food-img.jpg"
+
+      }
+    ]
+  },
+  {
+    "categoryName": "TANDOORI PLATTER(NON-VEG)",
+    "items": [
+      {
+        "name": "Paneer tikka",
+        "price": "16.99",
+        "details": "Chicken marinated with curd, fenugreek, chilly paste,\nmustard oil",
+        "imageUri": "assets/images/food-img.jpg"
+      },
+      {
+        "name": "Tandoori chicken",
+        "price": "13.99",
+        "details": "Thigh chicken marinated with cashew, cream cheese,\ncurd and white pepper",
+        "imageUri": "assets/images/food-img.jpg"
+      }
+    ]
+  },
+  {
+    "categoryName": "VEG ENTREE",
+    "items": [
+      {
+        "name": "Dal tadka",
+        "price": "12.99",
+        "details": "Slow cook pigeon lentil temper with cumin, garlic, chilly",
+        "imageUri": "assets/images/food-img.jpg"
+      },
+      {
+        "name": "Dal makhani",
+        "price": "12.99",
+        "details": "Overnight soaked black lentil, kidney beans and split\nlentils, finish with clarified butter",
+        "imageUri": "assets/images/food-img.jpg"
+      },
+      {
+        "name": "Chana masala",
+        "price": "8.99",
+        "details": "Slow cook chickpeas, blend onion, tomato, spices",
+        "imageUri": "assets/images/food-img.jpg"
+      },
+      {
+        "name": "Aloo gobi matar",
+        "price": "13.49",
+        "details": "Potato, Cauliflower, Green peas, blend of onion fenugreek",
+        "imageUri": "assets/images/food-img.jpg"
+      },
+      {
+        "name": "Bhindi masala",
+        "price": "13.49",
+        "details": "Fry okra tossed with onion, cilantro, blend spices",
+        "imageUri": "assets/images/food-img.jpg"
+      },
+      {
+        "name": "Bhagara baigaan",
+        "price": "13.49",
+        "details": "Fry Baby Eggplant mix with coconut, sesame, peanut\nsauce",
+        "imageUri": "assets/images/food-img.jpg"
+      },
+      {
+        "name": "Navratna korma",
+        "price": "13.49",
+        "details": "seasonal mix vegetable mix with onion, coconut\ncreamy sauce",
+        "imageUri": "assets/images/food-img.jpg"
+      },
+      {
+        "name": "Malai kofta",
+        "price": "13.49",
+        "details": "seasonal vegetable ball mix with creamy, fenugreek\nsauce",
+        "imageUri": "asset/images/food-img.jpg"
+      },
+      {
+        "name": "Kadhai subz",
+        "price": "13.49",
+        "details": "seasonal vegetable mix with onion, tomato, fresh\ncoriander spices",
+        "imageUri": "assets/images/food-img.jpg"
+      },
+      {
+        "name": "Kolhapuri subz",
+        "price": "13.49",
+        "details": "Seasonal vegetable mix with thick tomato, onion sauce",
+        "imageUri": "assets/images/food-img.jpg"
+      },
+      {
+        "name": "Palak corn subz",
+        "price": "13.49",
+        "details": "cottage cheese mix with blend of onion, tomato, spinach PALAK PANEER",
+        "imageUri": "assets/images/food-img.jpg"
+      },
+      {
+        "name": "Palak paneer",
+        "price": "14.99",
+        "details": "seasonal vegetable mix with onion, tomato, fresh\ncoriander spices",
+        "imageUri": "assets/images/food-img.jpg"
+      },
+      {
+        "name": "Paneer matar masala",
+        "price": "14.99",
+        "details": "Cubes cottage cheese, green peas mix with onion, spices\nblend",
+        "imageUri": "assets/images/food-img.jpg"
+      },
+      {
+        "name": "Paneer makhani",
+        "price": "14.99",
+        "details": "Cubes cottage cheese mix with tomato creamy sauce",
+        "imageUri": "assets/images/food-img.jpg"
+      },
+      {
+        "name": "Paneer tikka masala",
+        "price": "14.99",
+        "details": "Clay oven cook cottage cheese, onion, bell pepper mix\nwith tomato creamy sauce",
+        "imageUri": "assets/images/food-img.jpg"
+      },
+      {
+        "name": "Kadhai paneer",
+        "price": "14.99",
+        "details": "Cottage cheese with onion, tomato, bell pepper, blend\nof thick onion sauce",
+        "imageUri": "assets/images/food-img.jpg"
+      },
+      {
+        "name": "Mehthi matar malai paneer",
+        "price": "14.99",
+        "details": "Cottage cheese cubes, green peas, blend with fenugreek\ncreamy sauce",
+        "imageUri": "assets/images/food-img.jpg"
+      },
+      {
+        "name": "Nizami paneer",
+        "price": "14.99",
+        "details": "Cottage cheese cubes with thick cashew creamy sauce",
+        "imageUri": "assets/images/food-img.jpg"
+      }
+    ]
+  },
+  {
+    "categoryName": "NON-VEG ENTREE",
+    "items": [
+      {
+        "name": "Egg masala",
+        "price": "13.99",
+        "details": "Hard-boiled fried egg, blend of onion spices sauce",
+        "imageUri": "assets/images/food-img.jpg"
+      },
+      {
+        "name": "Kadhai murgh",
+        "price": "14.99",
+        "details": "Chicken Thigh, onion, bell pepper, with onion spices sauce",
+        "imageUri": "assets/images/food-img.jpg"
+      },
+      {
+        "name": "Dum ka murgh",
+        "price": "14.99",
+        "details": "Chicken thigh mix with homemade creamy sauce",
+        "imageUri": "assets/images/food-img.jpg"
+      },
+      {
+        "name": "Korma",
+        "price": "14.99/16.99/17.99",
+        "details": "Chicken/Lamb/Goat mix with onion cashew nut creamy sauce",
+        "imageUri": "assets/images/food-img.jpg"
+      },
+      {
+        "name": "Chettinad curry",
+        "price": "14.99/16.99/17.99",
+        "details": "Chicken/Fish/Lamb/Goat/Shrimp mix with coriander, coconut,\ncurry leaves sauce",
+        "imageUri": "assets/images/food-img.jpg"
+      },
+      {
+        "name": "Butter chicken",
+        "price": "14.99",
+        "details": "Chicken breast cooked in, tomato, butter, and fenugreek,\nfinished with cream",
+        "imageUri": "assets/images/food-img.jpg"
+      },
+      {
+        "name": "Chicken tikka masala",
+        "price": "14.99/16.99/17.99",
+        "details": "Chicken/Lamb/Goat onion, Bell pepper, Tomato, Onion,\nCreamy sauce",
+        "imageUri": "assets/images/food-img.jpg"
+      },
+      {
+        "name": "Saag curry",
+        "price": "14.99/16.99/16.99",
+        "details": "Chicken/Lamb/Goat blend of spinach, onion, homemade spices",
+        "imageUri": "assets/images/food-img.jpg"
+      },
+      {
+        "name": "Special hz curry",
+        "price": "14.99/16.99/17.99",
+        "details": "Chicken/Fish/Shrimp/Lamb/Goat mix with homemade sauce",
+        "imageUri": "assets/images/food-img.jpg"
+      },
+      {
+        "name": "Malabaar curry",
+        "price": "16.99/16.99",
+        "details": "Fish/Shrimp cook with coconut, curry leaves, aromatic spices",
+        "imageUri": "assets/images/food-img.jpg"
+      },
+      {
+        "name": "Bhuna",
+        "price": "15.99/16.99/17.99",
+        "details": "Chicken/Lamb/Goat cook with brown Onion and Tomato Sauce",
+        "imageUri": "assets/images/food-img.jpg"
+      },
+      {
+        "name": "Rogan josh",
+        "price": "15.99/16.99/17.99",
+        "details": "Chicken, Lamb, Goat, cook with Flavorful sauce with homemade spices",
+        "imageUri": "assets/images/food-img.jpg"
+      }
+    ]
+  },
+  {
+    "categoryName": "INDO CHINESE",
+    "items": [
+      {
+        "name": "Hz special spicy\nChowmein",
+        "price": "12.99/13.99/14.99",
+        "details": "Veg/Egg/Chicken stir with Vegetables, Noodles spicy\nhomemade sauce",
+        "imageUri": "assets/images/food-img.jpg"
+      },
+      {
+        "name": "Hz special freid rice",
+        "price": "12.99/13.99/14.99",
+        "details": "Veg/Egg/Chicken stir with Vegetable Rice, spicy homemade sauce",
+        "imageUri": "assets/images/food-img.jpg"
+      }
+    ]
+  },
+  {
+    "categoryName": "HZ SIGNATURE",
+    "items": [
+      {
+        "name": "Lamb nihari",
+        "price": "19.99",
+        "details": "Lamb shank simmered in a blend of spices. finish with\ncilantro and lemon juice",
+        "imageUri": "assets/images/food-img.jpg"
+      },
+      {
+        "name": "Haleem",
+        "price": "17.99",
+        "details": "Ground lamb. Lentils. Wheat, fried onion, ground spice",
+        "imageUri": "assets/images/food-img.jpg"
+      }
+    ]
+  },
+  {
+    "categoryName": "BIRYANI",
+    "items": [
+      {
+        "name": "Lamb nihari",
+        "price": "13.99",
+        "details": "slow-cook Basmati rice mixed with Carrot, Potato,\nCauliflower, and Beans",
+        "imageUri": "assets/images/food-img.jpg"
+      },
+      {
+        "name": "Hyderabadi goongura\nVeg dum biryani",
+        "price": "14.99",
+        "details": "Slow cook Basmati rice with Mango, Cauliflower, Carrot, and Potato",
+        "imageUri": "assets/images/food-img.jpg"
+      },
+      {
+        "name": "Hyderabadi veg avakai biryani",
+        "price": "14.99",
+        "details": "Slow cook Basmati rice with Mango, Cauliflower, Carrot, and Potato",
+        "imageUri": "assets/images/food-img.jpg"
+      },
+      {
+        "name": "Paneer biryani",
+        "price": "15.99",
+        "details": "Cottage cheese slow cook with Basmati rice and aromatic spices",
+        "imageUri": "assets/images/food-img.jpg"
+      },
+      {
+        "name": "Egg biryani",
+        "price": "15.99",
+        "details": "Hard-Boiled Egg fry mix with house special sauce and Basmati rice",
+        "imageUri": "assets/images/food-img.jpg"
+      },
+      {
+        "name": "Chicken dum biryani",
+        "price": "15.99",
+        "details": "Juicy Chicken leg slow-cooked with Basmati rice and aromatic spices",
+        "imageUri": "assets/images/food-img.jpg"
+      },
+      {
+        "name": "Goongura chicken biryani",
+        "price": "16.99",
+        "details": "Juicy Chicken leg slow-cooked with Basmati rice, Goongura and\naromatic spices",
+        "imageUri": "assets/images/food-img.jpg"
+      },
+      {
+        "name": "Avakai chicken biryani",
+        "price": "16.99",
+        "details": "Juicy Chicken leg slow cooked with Basmati rice, Mango and\naromatic spicest",
+        "imageUri": "assets/images/food-img.jpg"
+      },
+      {
+        "name": "Hz special boneless biryani",
+        "price": "16.99",
+        "details": "Coated Chicken cubes toss with homemade sauce mix\nwith Basmati rice",
+        "imageUri": "assets/images/food-img.jpg"
+      },
+      {
+        "name": "Chicken 65 biryani",
+        "price": "16.99",
+        "details": "Coated Chicken cubes toss with curd base sauce mix with\nBasmati rice",
+        "imageUri": "assets/images/food-img.jpg"
+      },
+      {
+        "name": "Hyderabadi goat dum biryani",
+        "price": "16.99",
+        "details": "Baby Goat with bone slow cook with basmati rice and\naromatic spices.",
+        "imageUri": "assets/images/food-img.jpg"
+      },
+      {
+        "name": "Goat fry biryani",
+        "price": "18.99",
+        "details": "Juicy Goat tossed with Basmati rice, Saffron. and aromatic\nspices",
+        "imageUri": "assets/images/food-img.jpg"
+      },
+      {
+        "name": "Lamb fry biryani",
+        "price": "18.99",
+        "details": "Bone-Less Lamb toss with Basmati rice,\nsaffrron and aromatic spices",
+        "imageUri": "assets/images/food-img.jpg"
+      },
+      {
+        "name": "Mahi fry biryani",
+        "price": "18.99",
+        "details": "Tilapia fish cooked with basmati rice and aromatic spice",
+        "imageUri": "assets/images/food-img.jpg"
+      },
+      {
+        "name": "Shrimp fry biryani",
+        "price": "18.99",
+        "details": "Shrimp cook with basmati rice and aromatic spice",
+        "imageUri": "assets/images/food-img.jpg"
+      }
+    ]
+  },
+  {
+    "categoryName": "BREADS",
+    "items": [
+      {
+        "name": "Tandoori roti /butter",
+        "price": "2.99/3.49",
+        "details": "Whole wheat flour flat bread cook in clay oven",
+        "imageUri": "assets/images/food-img.jpg"
+      },
+      {
+        "name": "Plain naan /butter naan",
+        "price": "3.49/3.99",
+        "details": "All-Purpose flour flat bread cook in clay oven",
+        "imageUri": "assets/images/food-img.jpg"
+      },
+      {
+        "name": "Garlic naan/chilly",
+        "price": "4.49/4.99",
+        "details": "All-Purpose flour flatbread on top of garlic/chilly\ncook in clay oven",
+        "imageUri": "assets/images/food-img.jpg"
+      },
+      {
+        "name": "Province naan",
+        "price": "5.49",
+        "details": "All-Purpose flour, fresh Rosemary thyme, and Cilantro",
+        "imageUri": "assets/images/food-img.jpg"
+      }
+    ]
+  },
+  {
+    "categoryName": "SIDES DISH",
+    "items": [
+      {
+        "name": "White rice",
+        "price": "3.49",
+        "details": "Steam long grain Basmati rice",
+        "imageUri": "assets/images/food-img.jpg"
+      },
+      {
+        "name": "Jeera rice",
+        "price": "5.99",
+        "details": "Whole Grain Basmati rice served with Cumin seed,\nCilantro leaves, Clarified butter",
+        "imageUri": "assets/images/food-img.jpg"
+      },
+      {
+        "name": "Peas pulao",
+        "price": "5.49",
+        "details": "All-Purpose flour, fresh Rosemary thyme, and Cilantro",
+        "imageUri": "assets/images/food-img.jpg"
+      }
+    ]
+  },
+  {
+    "categoryName": "DESSERTS/SWEETS",
+    "items": [
+      {
+        "name": "Double ka meetha",
+        "price": "7.99",
+        "details": "Freid bread slices soaked in a mixture of milk,\nand sugar, finish with nuts",
+        "imageUri": "assets/images/food-img.jpg"
+      },
+      {
+        "name": "Khubani ka meetha",
+        "price": "12.99",
+        "details": "Compote Dry Apricot, Finish with Almond, Cashew",
+        "imageUri": "assets/images/food-img.jpg"
+      },
+      {
+        "name": "Gulab jamun (2pcs)",
+        "price": "5.99",
+        "details": "Milk Solids(Khoya) mixed with Flour, and Green Cardamon",
+        "imageUri": "assets/images/food-img.jpg"
+      },
+      {
+        "name": "Rasmalai (2pcs)",
+        "price": "5.99",
+        "details": "Soft Cottage Cheese(Chenna) cook in Sugar syrup,\nserved Saffron Milk",
+        "imageUri": "assets/images/food-img.jpg"
+      }
+    ]
+  },
+  {
+    "categoryName": "DRINK",
+    "items": [
+      {
+        "name": "Sweet lassi",
+        "price": "5.49",
+        "details": "Blend of Curd, Sugar Flavor with Green Cardamon",
+        "imageUri": "assets/images/food-img.jpg"
+      },
+      {
+        "name": "Mango lassi",
+        "price": "5.99",
+        "details": "Blend of Curd, Sugar, and Mango Pulp",
+        "imageUri": "assets/images/food-img.jpg"
+      },
+      {
+        "name": "Gulab jamun (2pcs)",
+        "price": "4.99",
+        "details": "Black Tea Leaf, Milk, Cardamom Finish with Condensed milk",
+        "imageUri": "assets/images/food-img.jpg"
+      },
+      {
+        "name": "Irani chai",
+        "price": "5.99",
+        "details": "Soft Cottage Cheese(Chenna) cook in Sugar syrup,\nserved Saffron Milk",
+        "imageUri": "assets/images/food-img.jpg"
+      }
+    ]
+  }
+]
