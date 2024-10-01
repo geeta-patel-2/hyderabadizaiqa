@@ -29,39 +29,13 @@
 }
 .contact_twoCol_sec  {
   padding: 50px 0px 50px 0px  ;
-  .eltdf-section-title-holder {
-    position: relative;
-    display: inline-block;
-    width: 100%;
-    text-align: center;
-
-    .eltdf-st-title-holder {
-      display: inline-block;
-      display: -ms-inline-flexbox;
-      display: inline-flex;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      align-items: center;
-      position: relative;
-    }
-
-    .eltdf-st-tagline {
-      font-family: Miniver, sans-serif;
-      font-size: 19px;
-      font-weight: 400;
-      line-height: 28px;
-      letter-spacing: .04em;
-      color: #afb8b8;
-      text-transform: none;
-      -webkit-font-smoothing: antialiased;
-      color: #c9ab81;
-      display: block;
-      margin-bottom: 13px;
-    }
-    .eltdf-st-title {
+  .MainTitle{
+    margin:auto;
+  }
+  .eltdf-st-title {
       margin-bottom: 40px;
     }
-  }
+
 }
 .contact_locationSec {
   .contact_address {
@@ -132,6 +106,9 @@
   .google_map { margin-top: 50px; }
 }
 /*Form CSS*/
+.contact_form {
+  margin-top: 50px;
+}
 form{
   input, textarea{
     position: relative;
