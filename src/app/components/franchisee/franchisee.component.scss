@@ -34,7 +34,7 @@ form{
     position: relative;
     width: 100%;
     margin: 0 0 28px;
-    padding: 7px 23px 3px;
+    padding: 11px 23px 11px !important;
     font-family: inherit;
     font-size: 19px;
     font-weight: inherit;
@@ -49,6 +49,9 @@ form{
     box-sizing: border-box;
     -webkit-transition: border-color .2s ease-in-out;
     transition: border-color .2s ease-in-out;
+  }
+  textarea {
+    min-height: 200px !important;
   }
 
   .submitBtn{
@@ -75,4 +78,31 @@ form{
   }
 
 
+}
+@media(max-width: 1024px){
+  .franchiseeBanner {
+    padding:0 15px;
+  }
+  .franchiseeForm {
+    width: 100%;
+  .container-lg{
+    padding:0 15px;
+  }
+    .FranchiseTxt {
+      width: 100%;
+    }
+  }
+}
+@media(max-width: 575px){
+  .franchiseeBanner {
+    text-align: center;
+    padding:30px 0;
+    .breadcrumb {
+      justify-content: center !important;
+      padding-top: 20px;
+    }
+  }
+  .franchiseeForm {
+   padding: 30px 0;
+  }
 }

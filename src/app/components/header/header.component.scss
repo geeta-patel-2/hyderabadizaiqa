@@ -121,6 +121,9 @@ header {
           bottom: -.3em;
           transition: all ease-in-out .6s
         }
+        &:last-child{
+          margin-right: 0;
+        }
         &:hover:before, &:hover:after {
 
           width: 100%;
@@ -133,6 +136,28 @@ header {
   .navbar-brand {
     img {
       width: 130px;
+    }
+  }
+}
+
+/*Responsive*/
+@media(max-width: 1200px){
+  header {
+    .navbar {
+      .navbar-nav {
+        .nav-link {
+          margin: 0 18px
+        }
+      }
+    }
+  }
+}
+@media(max-width: 1024px){
+  header {
+    .navbar-brand {
+      img {
+        width: 80px;
+      }
     }
   }
 }

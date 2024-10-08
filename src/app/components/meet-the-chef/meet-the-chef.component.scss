@@ -1,13 +1,6 @@
 .innerBanner {
   position: relative;
-  .innerBanner_title {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top:50%;
-    transform: translateY(-50%);
-    width: 100%;
-  }
+  padding:100px 0;
   .bannerTitleDecor {
     color: #9c7c57;
     display: inline-block;
@@ -23,11 +16,15 @@
 }
 
 .meetMenuRow {
-  padding:100px 0 50px;
+  margin-bottom: 200px;
+  &:last-child {
+    margin-bottom: 0;
+  }
   .ourMenu_txt{
     margin-bottom:80px;
   }
 }
+
 .chefImage {
   position: relative;
   .chefImgBgImg{
@@ -39,3 +36,43 @@
   }
 }
 
+@media(max-width: 1024px){
+  .innerBanner {padding:50px 0;}
+  .meetMenuRow {
+    margin-bottom: 100px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+}
+@media(max-width: 767px){
+  .chefImage {
+    text-align: center;
+    .chefImgBgImg {
+      left: 90px;
+    }
+
+  }
+}
+@media(max-width: 575px){
+  .chefImage {
+    .chefImgBgImg {
+      left: 30px;
+    }
+  }
+}
+@media(max-width: 460px){
+  .innerBanner {
+    padding:30px 0;
+   .bannerTitleDecor {
+     display: block;
+   }
+  }
+  .chefImage {
+    .chefImgBgImg {
+      left: 0;
+    }
+  }
+}

@@ -97,7 +97,9 @@
     }
   }
 }
-
+.hChefImg {
+  margin-bottom: 50px;
+}
 .hFranchiseExpansion {
 
   .row {
@@ -140,6 +142,126 @@
 
     svg {
       color: #c9ab81;
+    }
+  }
+}
+
+@media(max-width: 1024px){
+  .HomepageBanner{
+    top:-79px;
+  }
+}
+@media(max-width: 767px){
+
+  .HomepageBanner{
+    top: 0;
+    .SubTitle{
+      font-size: 20px;
+    }
+    p{
+      font-size: 15px;
+
+    }
+  }
+  .ptb-80 {
+    padding: 30px 0;
+  }
+  .storyTwoSec {
+    text-align: center;
+  }
+  .storyLogo{
+    margin: auto;
+    margin-bottom: 40px;
+  }
+  .hAboutBtn {margin-top: 20px}
+  .menuBox{margin-bottom: 30px}
+  .whatWeServeSection {
+    .animationSideImage {
+      width: 35%;
+      margin: auto;
+    }
+  }
+  .hChef {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .hFranchiseExpansion {
+    .row {
+      div {
+        padding: 0 15px;
+        .imgTagline{
+          display: table;
+          margin:15px auto 0;
+        }
+        .hFranchiseImg {
+          text-align: center !important;
+          margin-top: 15px;
+        }
+      }
+    }
+  }
+  .hMenuPriceBx {
+    padding:0 15px;
+    .hMenuTitlePrice{
+      .hPriceLine {
+        width: 13%;
+      }
+      .hMenuPrice {
+         font-size: 15px;
+      }
+    }
+  }
+  .whatWeServeSection {
+    .weServeLeftBox{
+      width: 100%;
+    }
+  }
+  .MainTitle h2, .MainTitle .h2, .MainTitle h1, .MainTitle .h1, .MainTitle h4, .MainTitle .h4 {
+    padding: 0 10px;
+  }
+
+}
+@media(max-width: 460px){
+  .hFranchiseExpansion {
+    .row {
+      div {
+        padding: 0 10px;
+      }
+    }
+  }
+  .HomepageBanner {
+    .carousel-caption{
+      position: relative;
+      left: 0;
+      right: 0;
+      top: 0;
+      transform: none;
+      padding-bottom: 70px;
+      .HomePageBanner {
+        padding:0 15px;
+      }
+    }
+  }
+  .whatWeServeSection {
+    .animationSideImage {
+      width: 85%;
+    }
+  }
+  .hMenuPriceBx {
+    padding: 0 7px;
+  }
+  footer {
+    .footer_bottom_sec {
+      font-size: 15px;
+    }
+  }
+}
+@media(max-width: 340px){
+  .hMenuPriceBx {
+    .hMenuTitlePrice {
+      .hPriceLine {
+        width: 6%;
+      }
     }
   }
 }

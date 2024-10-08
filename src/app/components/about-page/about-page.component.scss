@@ -27,9 +27,6 @@
 }
 
 .about_content_sec {
-
-  padding: 70px 0;
-
   p {
     padding-bottom: 40px;
   }
@@ -54,9 +51,6 @@
       line-height: 1.52em;
     }
   }
-}
-.abTestimonial {
-  padding: 90px 0;
 }
 .testimonialSec {
   .quote {
@@ -85,5 +79,52 @@
         font-family: Miniver, sans-serif;
       }
     }
+  }
+}
+
+/*Responsive*/
+@media(max-width: 1024px){
+  .about_content_sec > div {
+    padding:0 70px;
+  }
+  .about_banner {
+    height: auto !important;
+    padding: 70px 0;
+    .innerBanner_title {
+      position: relative;
+      left: 0;
+      right: 0;
+      top: 0;
+      transform: none;
+    }
+  }
+  .about_content_sec {
+    padding: 30px 0;
+  }
+  .about_content_sec > div{
+    padding:0 15px;
+  }
+  .aboutThreeColContentSec {
+    text-align: center;
+    .about_logo {
+      margin-bottom: 30px;
+    }
+    .singlePatternAnimation {
+      margin-top: 30px;
+    }
+  }
+  .AboutChefTwoColSec {
+    text-align: center;
+  }
+  .testimonialSec {
+    .testimonialSlider {
+      width: 100%;
+    }
+  }
+}
+
+@media(max-width: 767px){
+  .innerBanner {
+    padding:50px 0;
   }
 }

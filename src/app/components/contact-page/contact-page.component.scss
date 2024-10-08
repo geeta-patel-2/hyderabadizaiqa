@@ -24,6 +24,7 @@
     width: auto;
     display: inline-block;
     vertical-align: middle;
+    padding: 0 20px;
   }
 
 }
@@ -114,7 +115,7 @@ form{
     position: relative;
     width: 100%;
     margin: 0 0 28px;
-    padding: 7px 23px 3px;
+    padding:11px 23px 11px !important;
     font-family: inherit;
     font-size: 19px;
     font-weight: inherit;
@@ -182,4 +183,23 @@ form{
   }
 
 
+}
+
+/*Responsive*/
+@media(max-width: 1024px){
+  .innerBanner {
+    padding:70px 0;
+  }
+  .contact_twoCol_sec {
+    padding:0 20px
+  }
+}
+@media(max-width: 767px){
+  .innerBanner {
+    padding:50px 0;
+  }
+  .contact_locationSec { margin-top: 50px; }
+  .contactMapSec {
+    padding:30px 0;
+  }
 }
