@@ -101,29 +101,33 @@ header {
         font-weight: 600;
         font-size: 14px;
         font-family: 'Open Sans Condensed', sans-serif;
-        margin:0 27px;
+        margin: 0 27px;
         letter-spacing: 1px;
         position: relative;
-        padding:0;
+        padding: 0;
+
         &:before, &:after {
           content: "";
           display: block;
           position: absolute;
           left: -.1em;
-          bottom:0;
+          bottom: 0;
           width: 0;
           height: 1px;
           border-top: 1px solid #c9ab81;
           transition: all ease-in-out .4s
 
         }
-        &:after{
+
+        &:after {
           bottom: -.3em;
           transition: all ease-in-out .6s
         }
-        &:last-child{
+
+        &:last-child {
           margin-right: 0;
         }
+
         &:hover:before, &:hover:after {
 
           width: 100%;
@@ -140,8 +144,10 @@ header {
   }
 }
 
+
+
 /*Responsive*/
-@media(max-width: 1200px){
+@media(max-width: 1200px) {
   header {
     .navbar {
       .navbar-nav {
@@ -152,7 +158,8 @@ header {
     }
   }
 }
-@media(max-width: 1024px){
+
+@media(max-width: 1024px) {
   header {
     .navbar-brand {
       img {
@@ -161,3 +168,4 @@ header {
     }
   }
 }
+
