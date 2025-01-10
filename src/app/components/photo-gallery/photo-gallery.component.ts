@@ -28,6 +28,8 @@ export class PhotoGalleryComponent {
         imageSource: 'assets/images/gallery_image7.jpg'
     }];
 
+
+
     images = [700, 533, 807, 124].map((n) => `https://picsum.photos/id/${n}/900/500`);
 
     constructor(config: NgbCarouselConfig) {
