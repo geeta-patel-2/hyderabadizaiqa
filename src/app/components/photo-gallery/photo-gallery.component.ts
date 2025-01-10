@@ -13,19 +13,19 @@ import {NgForOf} from "@angular/common";
 export class PhotoGalleryComponent {
 
     galleryImages: Array<{ imageSource: string }> = [{
-        imageSource: 'https://hyderabadizaiqa.com/wp-content/uploads/2023/07/banner-1.jpeg'
+        imageSource: 'assets/images/gallery_image1.jpg'
     }, {
-        imageSource: 'https://hyderabadizaiqa.com/wp-content/uploads/2023/07/banner-2.jpeg'
+        imageSource: 'assets/images/gallery_image2.jpg'
     }, {
-        imageSource: 'https://hyderabadizaiqa.com/wp-content/uploads/2023/07/banner-3.jpeg'
+        imageSource: 'assets/images/gallery_image3.jpg'
     }, {
-        imageSource: 'https://hyderabadizaiqa.com/wp-content/uploads/2023/07/banner-4.jpeg'
+        imageSource: 'assets/images/gallery_image4.jpg'
     }, {
-        imageSource: 'https://hyderabadizaiqa.com/wp-content/uploads/2023/06/w.png'
+        imageSource: 'assets/images/gallery_image5.jpg'
     }, {
-        imageSource: 'https://hyderabadizaiqa.com/wp-content/uploads/2023/07/banner-5.jpeg'
+        imageSource: 'assets/images/gallery_image6.jpg'
     }, {
-        imageSource: 'https://hyderabadizaiqa.com/wp-content/uploads/2023/07/banner-6.jpeg'
+        imageSource: 'assets/images/gallery_image7.jpg'
     }];
 
     images = [700, 533, 807, 124].map((n) => `https://picsum.photos/id/${n}/900/500`);

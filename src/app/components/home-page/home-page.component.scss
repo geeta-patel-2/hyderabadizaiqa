@@ -134,6 +134,7 @@
         font-weight: 400;
         line-height: 28px;
         letter-spacing: .04em;
+        display:block;
       }
       .hFranchiseTxt {
         padding-top: 0;
@@ -162,14 +163,18 @@
     }
   }
 }
-
+.mb-70{
+  margin-bottom: 70px;
+}
 @media(max-width: 1024px){
   .HomepageBanner{
     top:-79px;
   }
 }
 @media(max-width: 767px){
-
+  .mb-70{
+    margin-bottom: 50px;
+  }
   .HomepageBanner{
     top: 0;
     .SubTitle{

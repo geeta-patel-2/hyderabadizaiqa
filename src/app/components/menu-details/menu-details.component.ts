@@ -1,12 +1,14 @@
 import {Component} from '@angular/core';
 import {HttpClient} from "@angular/common/http";
 import {NgForOf} from "@angular/common";
+import {RouterLink} from "@angular/router";
 
 @Component({
     selector: 'app-menu-details',
     standalone: true,
     imports: [
-        NgForOf
+        NgForOf,
+        RouterLink
     ],
     templateUrl: './menu-details.component.html',
     styleUrl: './menu-details.component.scss'

@@ -27,6 +27,13 @@
 
 .chefImage {
   position: relative;
+  img {
+    overflow: hidden;
+    border-radius: 100%;
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+  }
   .chefImgBgImg{
     position: absolute;
     left: 0;
