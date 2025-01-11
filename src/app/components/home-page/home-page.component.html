@@ -71,7 +71,7 @@
                     <div class="storyLogo text-center">
                         <!--<img src="https://hyderabadizaiqa.com/wp-content/uploads/2023/06/logo-ww.png" alt="">-->
                         <img alt="" class="img-fluid" src="assets/images/main_logo.png">
-                        <button (click)="this.modalService.open(content, { centered: true })" class="play_btn">
+                       <!-- <button (click)="this.modalService.open(content, { centered: true })" class="play_btn">
                             <svg enable-background="new 0 0 97.094 97.094" height="97.094px" viewBox="0 0 97.094 97.094" width="97.094px" x="0px"
                                  xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
                                 <circle cx="48.558" cy="48.548" fill="none" r="48" stroke="currentColor" stroke-miterlimit="10"></circle>
@@ -80,7 +80,7 @@
                                 <polygon fill="none" points="42.578,69.964 42.578,27.13 63.994,48.546 " stroke="currentColor"
                                          stroke-miterlimit="10"></polygon>
           </svg>
-                        </button>
+                        </button>-->
                     </div>
                 </div>
                 <div class="col-md-6 col-sm-12">
@@ -707,7 +707,9 @@
                             flawless execution, our team is dedicated to crafting memorable dining experiences that leave a lasting impression on your
                             guests. Trust us to make your event a culinary delight, where every bite is a celebration of taste and elegance.</p>
                         <div class="franchiseBtn">
-                            <a class="simpleHoverBtn" routerLink="/menu-details">Catering Menu</a>
+                            <a class="simpleHoverBtn" href="./assets/others/CateringMenu.pdf" target="_blank"
+                               download="CateringMenu.pdf">Catering
+                                Menu</a>
                         </div>
                     </div>
                 </div><!--hFranchiseCnt-->
